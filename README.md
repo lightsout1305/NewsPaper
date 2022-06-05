@@ -1,3 +1,3 @@
 # moduleD2
 
-Django news_project by Dmitri Plotnikov
+Django news_project application by Dmitri Plotnikov
