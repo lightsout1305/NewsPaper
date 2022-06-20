@@ -3,13 +3,13 @@
 {% load custom_filters %}
 {% load custom_tags %}
 
-{% block title %}
-News
-{% endblock title %}
-
 {% block content %}
     <h1>Главные новости</h1>
     <h3>Количество новостей - {{ news|length }}</h3>
+    <form action="" method="get">
+        {{ filterset.form.as_p }}
+        <input type="submit" value="Поиск">
+    </form>
     <hr>
     {% if news %}
         <table>
@@ -47,5 +47,5 @@ News
             <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
         {% endif %}
     {% endif %}
-{% endblock content %}
 
+{% endblock content %}
