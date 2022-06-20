@@ -2,4 +2,4 @@
 
 Django news_project application by Dmitri Plotnikov
 
-Update: module D3 was uploaded
+Update: module D4 was uploaded
