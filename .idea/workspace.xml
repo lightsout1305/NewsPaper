@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d96f2c7-8c98-4f89-8a4e-ec4ce0be10b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/NewsPaper.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protect/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protect/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protect/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protect/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protect/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protect/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protect/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protect/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/account/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/protect/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sign/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sign/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sign/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/newsportal.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPaper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_project/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_project/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_project/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_project/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_project/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_project/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/flatpages/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/flatpages/default.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ar7qiElAINvgi8M4zeI7xCIYc3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper" />
+      <recent name="C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="NewsPaper" type="Python.DjangoServer" factoryName="Django server">
+      <module name="NewsPaper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d96f2c7-8c98-4f89-8a4e-ec4ce0be10b3" name="Changes" comment="" />
+      <created>1655756042798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655756042798</updated>
+      <workItem from="1655756043938" duration="210000" />
+      <workItem from="1656089167260" duration="1897000" />
+      <workItem from="1656172895295" duration="1958000" />
+      <workItem from="1656437062618" duration="12659000" />
+      <workItem from="1656500554651" duration="10615000" />
+      <workItem from="1656590832279" duration="9699000" />
+      <workItem from="1656602265859" duration="6941000" />
+      <workItem from="1656697994234" duration="11890000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+</project>
