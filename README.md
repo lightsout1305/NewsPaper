@@ -1,4 +1,4 @@
-# moduleD2
+# NewsPaper
 
 Django news_project application by Dmitri Plotnikov
 
