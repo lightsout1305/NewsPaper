@@ -1,9 +1,9 @@
-from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 from .models import Post
 from .filters import PostFilter
 from .forms import PostForm
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import PermissionRequiredMixin
 
 
 class NewsList(ListView):
@@ -31,10 +31,11 @@ class NewsSearch(ListView):
         return context
 
 
-class NewsCreate(CreateView):
+class NewsCreate(PermissionRequiredMixin, CreateView):
     form_class = PostForm
     model = Post
     template_name = 'news_edit.html'
+    permission_required = ('news_project.add_post', )
 
     def form_valid(self, form):
         news = form.save(commit=False)
@@ -42,10 +43,11 @@ class NewsCreate(CreateView):
         return super().form_valid(form)
 
 
-class ArticleCreate(CreateView):
+class ArticleCreate(PermissionRequiredMixin, CreateView):
     form_class = PostForm
     model = Post
     template_name = 'article_edit.html'
+    permission_required = ('news_project.add_post', )
 
     def form_valid(self, form):
         article = form.save(commit=False)
@@ -53,10 +55,11 @@ class ArticleCreate(CreateView):
         return super().form_valid(form)
 
 
-class NewsUpdate(UpdateView):
+class NewsUpdate(PermissionRequiredMixin, UpdateView):
     form_class = PostForm
     model = Post
     template_name = 'news_edit.html'
+    permission_required = ('news_project.change_post', )
 
     def form_valid(self, form):
         news = form.save(commit=False)
@@ -64,10 +67,11 @@ class NewsUpdate(UpdateView):
         return super().form_valid(form)
 
 
-class ArticleUpdate(UpdateView):
+class ArticleUpdate(PermissionRequiredMixin, UpdateView):
     form_class = PostForm
     model = Post
     template_name = 'article_edit.html'
+    permission_required = ('news_project.change_post',)
 
     def form_valid(self, form):
         article = form.save(commit=False)
@@ -91,5 +95,6 @@ class NewsDetail(DetailView):
     model = Post
     template_name = 'detail.html'
     context_object_name = 'onenews'
+
 
 # Create your views here.

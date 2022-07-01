@@ -1,0 +1,86 @@
+Команды в news_project:
+
+1. Создать 2 пользователя:
+	luigi = User.objects.create_user(username='Luigi')  # id в таблице auth_user начинается с 3, так как в начале неправильно создал 2 пользователей
+	mario = User.objects.create_user(username='Mario')
+
+2. Создать 2 объекта модели Author:
+	Author.objects.create(author_user=luigi)
+	Author.objects.create(author_user=mario)
+
+3. Добавить 4 категории в модель Category:
+	Category.objects.create(category_name='Politics')
+	Category.objects.create(category_name='Economy')
+	Category.objects.create(category_name='IT')
+	Category.objects.create(category_name='Art') # id = 5, на замену категории Sports, которую удалил
+
+4. Добавьте 2 статьи и 1 новость:
+'''Переменные заголовков и содержимого объявил предварительно'''
+	Post.objects.create(author=author_luigi, title=super_title1, choice='ARTL', content=super_content1)  # author_luigi = Author.objects.get(id=1)
+	Post.objects.create(author=author_luigi, title=super_title2, choice='ARTL', content=super_content2)
+	Post.objects.create(author=author_mario, title=super_title3, choice='NEWS', content=super_content3)  # author_mario = Author.objects.get(id=2)
+
+5. Присвоить каждому объекту модели Post минимум 2 категории:
+	Post.objects.get(id=1).categories.add(Category.objects.get(id=3))
+	Post.objects.get(id=1).categories.add(Category.objects.get(id=2))
+	Post.objects.get(id=2).categories.add(Category.objects.get(id=1))
+	Post.objects.get(id=2).categories.add(Category.objects.get(id=2))
+	Post.objects.get(id=3).categories.add(Category.objects.get(id=5))
+	Post.objects.get(id=3).categories.add(Category.objects.get(id=1))
+
+6. Создать минимум 4 комментария к разным объектам модели Post (к каждому объекту минимум 1 комментарий):
+	Comment.objects.create(post=Post.objects.get(id=1), user=Author.objects.get(id=2).author_user, comment_text='Откуда вы взяли эту информацию? С Панорамы? Вот я всегда беру только проверенную инфу!')
+	Comment.objects.create(post=Post.objects.get(id=1), user=Author.objects.get(id=1).author_user, comment_text='Я никогда не вру, Марио!') 
+	Comment.objects.create(post=Post.objects.get(id=2), user=Author.objects.get(id=2).author_user, comment_text='Жаль, что теперь нечего плеснуть в кофе, разве что, коровье молоко')
+	Comment.objects.create(post=Post.objects.get(id=2), user=Author.objects.get(id=1).author_user, comment_text='У вас есть кофе?')
+	Comment.objects.create(post=Post.objects.get(id=3), user=Author.objects.get(id=1).author_user, comment_text='Может быть, у кого-то дальтонизм?')
+	Comment.objects.create(post=Post.objects.get(id=3), user=Author.objects.get(id=2).author_user, comment_text='Не всем дано искусство')
+
+7. Применить методы like() и dislike () к статьям/новостям и комментариям:
+'''Команды приведены один раз для каждого поста и комментария, по факту было больше'''
+	Post.objects.get(id=1).like()
+	Post.objects.get(id=1).dislike()
+	Post.objects.get(id=2).like()            
+	Post.objects.get(id=2).dislike()  
+	Post.objects.get(id=3).like() 
+	Comments.objects.get(id=1).like()
+	Comments.objects.get(id=1).dislike()
+	Comments.objects.get(id=2).like()
+	Comments.objects.get(id=2).dislike()
+	Comments.objects.get(id=3).like()
+	Comments.objects.get(id=3).dislike()
+	Comments.objects.get(id=4).like()
+	Comments.objects.get(id=4).dislike()
+	Comments.objects.get(id=5).like()
+	Comments.objects.get(id=5).dislike()
+	Comments.objects.get(id=6).like()
+	Comments.objects.get(id=6).dislike()
+
+8. Обновить рейтинги пользователей:
+	Author.objects.get(id=1).update_rating()
+	Author.objects.get(id=2).update_rating()
+
+9. Вывести username и рейтинг лучшего пользователя:
+for i in Author.objects.order_by('-author_rating')[:1]:
+	print(f'Лучший автор - {i.author_user.username}! Его рейтинг {i.author_rating}!')  # Поле author_user - связь OnetoOneField с моделью User
+
+10. Вывести дату добавления, username автора, рейтинг, заголовок и превью лучшей статьи, основываясь на лайках/дислайках к этой статье:
+for i in Post.objects.order_by('-content_rating')[:1]:                                                                                                                     
+	print(f'Пост: дата добавления: {i.register_date}, автор: {i.author.author_user.username}, рейтинг {i.content_rating}, заголовок: "{i.title}", превью: {i.preview()}')
+
+11. Вывести все комментарии (дата, пользователь, рейтинг, текст) к этой статье.
+for i in Post.objects.order_by('-content_rating')[:1]:                                                                                                                          
+	for n in Comment.objects.filter(post=i):
+		print(f'Дата добавления комментария: {n.register_comment}, текст: {n.comment_text}, рейтинг комментария: {n.comment_rating}, автор: {n.user.username}') 
+
+'''К лучшему посту все комментарии'''
+for i in Post.objects.order_by('-content_rating')[:1]:
+	print(f'Пост: дата добавления: {i.register_date}, автор: {i.author.author_user.username}, рейтинг {i.content_rating}, заголовок: "{i.title}", превью: {i.preview()}')          
+	for n in Comment.objects.filter(post=i):                                                                                                                               
+		print(f'Дата добавления комментария: {n.register_comment}, текст: {n.comment_text}, рейтинг комментария: {n.comment_rating}, автор: {n.user.username}') 
+
+
+
+	
+	
+	 

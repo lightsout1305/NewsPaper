@@ -29,10 +29,3 @@ class PostFilter(FilterSet):
     class Meta:
         model = Post
         fields = {}
-
-
-
-
-
-
-
