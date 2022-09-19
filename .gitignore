@@ -1,6 +1,6 @@
 /venv
 /__pycache__
-/*.iws
+/.idea
 /.idea/*.xml
 /virtualenv
 /.env
