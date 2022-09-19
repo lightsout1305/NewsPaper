@@ -1,7 +1,7 @@
 /venv
-.idea
-/.idea
 /__pycache__
+/*.iws
+/*.xml
 /virtualenv
 /.env
 /cache_files
