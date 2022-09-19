@@ -2,9 +2,19 @@
 
 {% block content %}
 <h2>Страница авторизованного пользователя {{ request.user.username }}</h2>
-<div> Здесь может содержаться персональная информация для каждого пользователя </div>
+    <hr>
+<div>
+    <h5>Здесь может содержаться персональная информация для каждого пользователя</h5>
+</div>
     {% if is_not_author %}
-        <button><a href="sign/upgrade/"> Стать автором </a></button>
+        <a href="/sign/upgrade/">
+        <button class="btn btn-outline-success">Стать автором</button>
+        </a>
     {% endif %}
-<button><a href="/sign/logout/">Выйти</a></button>
+    <a href="http://127.0.0.1:8000/sign/profile_update/">
+    <button class="btn btn-outline-dark">Изменить свой профиль</button>
+    </a>
+    <a href="/sign/logout/">
+    <button class="btn btn-outline-dark">Выйти</button>
+    </a>
 {% endblock %}

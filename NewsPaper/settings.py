@@ -9,8 +9,10 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
+import os
 import os.path
 from pathlib import Path
+import logging
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
@@ -22,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-m5b9(kl@%+v-vi*rod5)c98ifq!g5e&450-8jehc*@05h-125x'
+SECRET_KEY = os.getenv('NEWSPAPER_DJANGO_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,27 +43,38 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.flatpages',
     'django.contrib.sites',
+    'crispy_forms',
+    'crispy_bootstrap5',
+    'celery',
+    'redis',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-    'news_project',
     'django_filters',
-    'sign',
-    'protect',
+    'debug_toolbar',
+    'news_project.apps.NewsConfig',
+    'sign.apps.SignConfig',
+    'protect.apps.ProtectConfig',
+    'django_apscheduler.apps.DjangoApschedulerConfig',
 
 ]
+
+APSCHEDULER_DATETIME_FORMAT = 'N j, Y, f:s a'
+
+APSCHEDULER_RUN_NOW_TIMEOUT = 25
 
 SITE_ID = 1
 
 LOGIN_URL = '/accounts/login/'
 
-LOGIN_REDIRECT_URL = '/main/'
+LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'django.middleware.cache.UpdateCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -69,6 +82,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
 ROOT_URLCONF = 'NewsPaper.urls'
@@ -99,9 +115,13 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_FORMS = {'signup': 'sign.forms.CommonSignupForm'}
+SOCIALACCOUNT_FORMS = {'signup': 'sign.socialforms.MyCustomSocialSignupForm'}
+SOCIALACCOUNT_AUTO_SIGNUP = False
+SOCIALACCOUNT_LOGIN_ON_GET = True
 
+ACCOUNT_EMAIL_SUBJECT_PREFIX = '[NewsPaper]'
 
 WSGI_APPLICATION = 'NewsPaper.wsgi.application'
 # Database
@@ -110,7 +130,15 @@ WSGI_APPLICATION = 'NewsPaper.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'cache_files'),
+        'TIMEOUT': 30,
     }
 }
 
@@ -133,13 +161,161 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False, # отключать ли предустановленные настройки логирования Джанго
+    'formatters': {
+        # INFO format
+        'i_format': {
+            'style': '{',
+            'format': '{asctime} | {levelname} | {module} | {message}',
+        },
+        # debug format
+        'd_format': {
+            'style': '{',
+            'datetime': '%Y.%m.%d %H:%M:%S',
+            'format': '{asctime} | {levelname} | {message}',
+        },
+        # warning format
+        'w_format': {
+            'style': '{',
+            'datetime': '%Y.%m.%d %H:%M:%S',
+            'format': '{asctime} | {levelname} | {pathname} | {message}',
+        },
+        # error and critical format
+        'e_c_format': {
+            'style': '{',
+            'datetime': '%Y.%m.%d %H:%M:%S',
+            'format': '{asctime} | {levelname} | {pathname} | {exc_info} |{message}',
+        },
+        'mail_format': {
+            'style': '{',
+            'datetime': '%Y.%m.%d %H:%M:%S',
+            'format': '{asctime} | {levelname} | {pathname} | {message}',
+        },
+    },
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'  # обрабатываем только когда параметр DEBUG = False в settings.py
+        },
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue' # обрабатываем только когда параметр DEBUG = True
+        },
+    },
+    'handlers':{
+        'console_i': {
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'i_format',
+        },
+        'console_d': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'd_format',
+        },
+        'console_w': {
+            'level': 'WARNING',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'w_format',
+        },
+        'console_e_c': {
+            'level': 'ERROR',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'e_c_format',
+        },
+        'general_log': {
+            'level': 'INFO',
+            'filters': ['require_debug_false'],
+            'class': 'logging.FileHandler',
+            'filename': 'logs/general.log',
+            'formatter': 'i_format',
+        },
+        'error_log': {
+            'level': 'ERROR',
+            'filters': ['require_debug_true'],
+            'class': 'logging.FileHandler',
+            'filename': 'logs/errors.log',
+            'formatter': 'e_c_format',
+        },
+        'security_log': {
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.FileHandler',
+            'filename': 'logs/security.log',
+            'formatter': 'i_format',
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'filters': ['require_debug_true'],
+            'formatter': 'mail_format',
+        },
+    },
+    'loggers':{
+        'django': {
+            'handlers': ['console_i', 'general_log'],
+            'level': 'DEBUG',
+        },
+        'console_debug': {
+            'handlers': ['console_d'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+        'console_warning': {
+            'handlers': ['console_w'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+        'console_e_c': {
+            'handlers': ['console_e_c'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        'file_general': {
+            'handlers': ['general_log'],
+            'level': 'INFO',
+        },
+        'django.request': {
+            'handlers': ['error_log', 'mail_admins'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        'django.server': {
+            'handlers': ['error_log', 'mail_admins'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        'django.template': {
+            'handlers': ['error_log'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        'django.db_backends': {
+            'handlers': ['error_log'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        'django.security': {
+            'handlers': ['security_log'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
+
+CELERY_ENABLE_UTC = False
+CELERY_TIMEZONE = TIME_ZONE
 
 USE_I18N = True
 
@@ -159,3 +335,31 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
+
+
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_PORT = 465
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+EMAIL_USE_SSL = True
+
+ADMINS = [
+    (os.getenv('ADMIN_NICKNAME'), os.getenv('ADMIN_EMAIL')),
+]
+
+SERVER_EMAIL = EMAIL_HOST_USER + '@mail.ru'
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER + '@mail.ru'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+
+INTERNAL_IPS = '127.0.0.1'
+

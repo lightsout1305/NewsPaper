@@ -2,13 +2,14 @@
 
 {% load custom_filters %}
 {% load custom_tags %}
+{% load crispy_forms_filters %}
 
 {% block content %}
     <h1>Главные новости</h1>
     <h3>Количество новостей - {{ news|length }}</h3>
     <form action="" method="get">
-        {{ filterset.form.as_p }}
-        <input type="submit" value="Поиск">
+        {{ filterset.form|crispy }}
+        <input type="submit" class="btn btn-outline-dark" value="Поиск">
     </form>
     <hr>
     {% if news %}
@@ -20,7 +21,7 @@
             </tr>
             {% for onenews in news %}
             <tr>
-                <td align="left">{{ onenews.title|censor }}</td>
+                <td align="left"><a href="{{ onenews.id }}" class="btn-sm">{{ onenews.title|censor }}</a> </td>
                 <td>{{ onenews.register_date|date:'M d Y' }}</td>
                 <td align="left">{{ onenews.content|truncatechars:20|censor }}</td>
             </tr>

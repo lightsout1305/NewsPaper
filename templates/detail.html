@@ -1,12 +1,16 @@
 {% extends 'flatpages/default.html' %}
 {% load custom_filters %}
+{% load crispy_forms_tags %}
 
-{% block title %}
-One news
-{% endblock title %}
+{% block title %}{{ book.title }}{% endblock title %}
 
 {% block content %}
-    <h1>{{ onenews.title|censor}}</h1>
-    <h3 align="right">Дата публикации - {{ onenews.register_date|date:'d.m.Y'  }}</h3>
-    <h5 align="left">{{ onenews.content|censor }}</h5>
+<div class="book-detail">
+    {% if onenews.covers %}
+    <img class="bookcover" src="{{ book.covers.url }}" alt="{{ onenews.title }}">
+    {% endif %}
+    <h3>{{ onenews.title }}</h3>
+    <p>Author: {{ onenews.author }}</p>
+    <p>Date: {{ onenews.register_date }}</p>
+</div>
 {% endblock content %}

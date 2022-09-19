@@ -13,7 +13,7 @@ class PostFilter(FilterSet):
         field_name='postcategory__category',
         queryset=Category.objects,
         label='News Categories',
-        conjoined=True
+        conjoined=True,
     )
 
     register_date = DateFilter(
@@ -23,7 +23,7 @@ class PostFilter(FilterSet):
                 'type': 'date'
             },
         ),
-        label='Choose date'
+        label='Choose date',
     )
 
     class Meta:

@@ -20,7 +20,7 @@ News
             </tr>
             {% for onenews in news %}
             <tr>
-                <td align="left">{{ onenews.title|censor }}</td>
+                <td align="left"><a href="search/{{ onenews.id }}" class="btn-sm">{{ onenews.title|censor }}</a> </td>
                 <td>{{ onenews.register_date|date:'M d Y' }}</td>
                 <td align="left">{{ onenews.content|truncatechars:20|censor }}</td>
             </tr>

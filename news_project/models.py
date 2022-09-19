@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.cache import cache
 from django.db.models import Sum
 from django.urls import reverse
 
@@ -32,6 +33,7 @@ class Author(models.Model):
 
 class Category(models.Model):
     category_name = models.CharField(max_length=50, unique=True)
+    subscribers = models.ManyToManyField(User, through='CategorySubscribers', blank=True)
 
     def __str__(self):
         return self.category_name
@@ -42,7 +44,7 @@ class Post(models.Model):
     choice = models.CharField(max_length=4, choices=CONTENT_TYPES, default=article)
     register_date = models.DateTimeField(auto_now_add=True)
     categories = models.ManyToManyField('Category', through='PostCategory')
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=50)
     content = models.TextField()
     content_rating = models.SmallIntegerField(default=0)
 
@@ -62,6 +64,10 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('news_detail', args=[str(self.id)])
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        cache.delete(f'news_detail-{self.pk}')  # затем удаляем его из кэша, чтобы сбросить его
 
 
 class PostCategory(models.Model):
@@ -83,5 +89,10 @@ class Comment(models.Model):
     def dislike(self):
         self.comment_rating -= 1
         self.save()
+
+
+class CategorySubscribers(models.Model):
+    linked_user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
+    linked_category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True)
 
 # Create your models here.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db.sqlite3" uuid="52764e87-e6cd-4d23-9fdb-3f0a959f57b0">
+    <data-source source="LOCAL" name="SQLite - db.sqlite3" uuid="9acad9d0-3b66-4f75-b19a-d9d8dadcda49">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>

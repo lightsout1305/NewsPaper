@@ -4,12 +4,10 @@ from django.core.exceptions import ValidationError
 
 
 class PostForm(forms.ModelForm):
-    title = forms.CharField(max_length=150)
 
     class Meta:
         model = Post
         fields = [
-            'author',
             'title',
             'content',
             'categories',
@@ -25,4 +23,3 @@ class PostForm(forms.ModelForm):
                 'Название и содержимое статьи (новости) не должны совпадать'
             )
         return cleaned_data
-

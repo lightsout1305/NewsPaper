@@ -5,6 +5,8 @@ from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 
+from news_project.models import Author
+
 
 class BaseRegisterView(CreateView):
     model = User
@@ -28,6 +30,7 @@ def upgrade_me(request):
     authors_group = Group.objects.get(name='authors')
     if not request.user.groups.filter(name='authors').exists():
         authors_group.user_set.add(user)
+        Author.objects.create(author_user_id=user.id)
     return redirect('/main/')
 
 

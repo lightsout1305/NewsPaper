@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailing list</title>
+</head>
+<body>
+    <h1>Приветствуем, <strong>{{ recipient }}</strong>! В вашей любимой категории новый пост!</h1>
+    <p>Заголовок:<strong>{{ title }}</strong></p>
+    <p>Краткое описание: <strong>{{ content|truncatechars:50 }}</strong></p>
+    <p>Чтобы прочитать статью, перейдите<a href="127.0.0.1/main/search/{{ pk }}" class="btn btn-outline-success"> по ссылке</a><br></p>
+<h3>С уважением,</h3>
+    <h3>Редакция NewsPaper.inc</h3>
+</body>
+</html>
