@@ -1,20 +1,21 @@
 {% extends 'main.html' %}
+{% load i18n %}
 
 {% block content %}
-<h2>Страница авторизованного пользователя {{ request.user.username }}</h2>
+<h2>{% trans "The authorized user page of" %} {{ request.user.username }}</h2>
     <hr>
 <div>
-    <h5>Здесь может содержаться персональная информация для каждого пользователя</h5>
+    <h5>{% trans "Here is the personal information of every authorized user" %}</h5>
 </div>
     {% if is_not_author %}
         <a href="/sign/upgrade/">
-        <button class="btn btn-outline-success">Стать автором</button>
+        <button class="btn btn-outline-success">{% trans "Become author" %}</button>
         </a>
     {% endif %}
     <a href="http://127.0.0.1:8000/sign/profile_update/">
-    <button class="btn btn-outline-dark">Изменить свой профиль</button>
+    <button class="btn btn-outline-dark">{% trans "Change your profile" %}</button>
     </a>
     <a href="/sign/logout/">
-    <button class="btn btn-outline-dark">Выйти</button>
+    <button class="btn btn-outline-dark">{% trans "Quit" %}</button>
     </a>
 {% endblock %}

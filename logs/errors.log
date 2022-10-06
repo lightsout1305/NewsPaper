@@ -2,3 +2,601 @@
 2022-09-20 00:11:24,114 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\urls.py | None |Hello! I'm error in your app. Enjoy:)
 2022-09-20 00:12:52,398 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\urls.py | None |Hello! I'm error in your app. Enjoy:)
 2022-09-20 00:18:13,990 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\urls.py | None |Hello! I'm error in your app. Enjoy:)
+2022-10-01 01:24:13,508 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\urls.py | None |Hello! I'm error in your app. Enjoy:)
+2022-10-03 22:27:22,961 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name."), <traceback object at 0x00000219DDFD72C0>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+2022-10-03 22:27:24,293 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 183987
+2022-10-03 22:29:22,681 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name."), <traceback object at 0x0000019F87454E40>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+2022-10-03 22:29:23,855 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 183987
+2022-10-03 22:31:04,093 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name."), <traceback object at 0x0000019F885751C0>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+2022-10-03 22:31:05,309 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 184874
+2022-10-03 22:37:31,069 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name."), <traceback object at 0x0000019F8963A7C0>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+2022-10-03 22:37:32,280 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 184498
+2022-10-03 23:48:25,263 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Unknown argument for 'blocktranslate' tag: 'title'."), <traceback object at 0x0000020EA6A26D80>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\templatetags\i18n.py", line 542, in do_block_translate
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Unknown argument for 'blocktranslate' tag: 'title'.
+2022-10-03 23:48:26,472 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 194664
+2022-10-05 00:40:31,059 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'TypeError'>, TypeError("NewsSearch.get_context_data() missing 1 required positional argument: 'request'"), <traceback object at 0x00000253A50771C0>) |Internal Server Error: /main/search/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+TypeError: NewsSearch.get_context_data() missing 1 required positional argument: 'request'
+2022-10-05 00:40:32,211 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/search/ HTTP/1.1" 500 95993
+2022-10-05 00:41:34,062 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'AttributeError'>, AttributeError("'NewsSearch' object has no attribute 'filterset'"), <traceback object at 0x000002A44BF6E740>) |Internal Server Error: /main/search/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\views.py", line 86, in get
+    'filterset': self.filterset,
+AttributeError: 'NewsSearch' object has no attribute 'filterset'
+2022-10-05 00:41:35,156 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/search/ HTTP/1.1" 500 96432
+2022-10-05 01:28:24,631 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'django.core.exceptions.FieldError'>, FieldError("Cannot resolve keyword 'date_pub' into field. Choices are: author, author_id, categories, choice, comment, content, content_en_us, content_fr, content_rating, content_ru, id, postcategory, register_date, title, title_en_us, title_fr, title_ru"), <traceback object at 0x000001E7055B3B80>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "C:\Python 3.10\lib\contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\debug_toolbar\panels\templates\panel.py", line 45, in _request_context_bind_template
+    context = processor(self.request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\context_processors.py", line 13, in navigate_context
+    archives = Post.objects.annotate(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\query.py", line 1225, in annotate
+    return self._annotate(args, kwargs, select=True)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\query.py", line 1273, in _annotate
+    clone.query.add_annotation(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\sql\query.py", line 1105, in add_annotation
+    annotation = annotation.resolve_expression(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\functions\datetime.py", line 80, in resolve_expression
+    copy = super().resolve_expression(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\expressions.py", line 762, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\expressions.py", line 655, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\sql\query.py", line 1922, in resolve_ref
+    join_info = self.setup_joins(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\sql\query.py", line 1773, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\sql\query.py", line 1677, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'date_pub' into field. Choices are: author, author_id, categories, choice, comment, content, content_en_us, content_fr, content_rating, content_ru, id, postcategory, register_date, title, title_en_us, title_fr, title_ru
+2022-10-05 01:28:25,775 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 169081
+2022-10-06 00:26:37,928 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'django.core.exceptions.FieldError'>, FieldError("Cannot resolve keyword 'date_pub' into field. Choices are: author, author_id, categories, choice, comment, content, content_en_us, content_fr, content_rating, content_ru, id, postcategory, register_date, title, title_en_us, title_fr, title_ru"), <traceback object at 0x000001F63BE25C00>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "C:\Python 3.10\lib\contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\debug_toolbar\panels\templates\panel.py", line 45, in _request_context_bind_template
+    context = processor(self.request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\context_processors.py", line 13, in navigate_context
+    archives = Post.objects.annotate(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\query.py", line 1225, in annotate
+    return self._annotate(args, kwargs, select=True)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\query.py", line 1273, in _annotate
+    clone.query.add_annotation(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\sql\query.py", line 1105, in add_annotation
+    annotation = annotation.resolve_expression(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\functions\datetime.py", line 80, in resolve_expression
+    copy = super().resolve_expression(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\expressions.py", line 762, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\expressions.py", line 655, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\sql\query.py", line 1922, in resolve_ref
+    join_info = self.setup_joins(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\sql\query.py", line 1773, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\db\models\sql\query.py", line 1677, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'date_pub' into field. Choices are: author, author_id, categories, choice, comment, content, content_en_us, content_fr, content_rating, content_ru, id, postcategory, register_date, title, title_en_us, title_fr, title_ru
+2022-10-06 00:26:39,263 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 168928
+2022-10-06 00:32:30,027 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'AttributeError'>, AttributeError("'str' object has no attribute 'field'"), <traceback object at 0x0000023A22B40A40>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 739, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 64, in as_crispy_form
+    return template.render(c)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\crispy_forms\templatetags\crispy_forms_utils.py", line 21, in render
+    return remove_spaces(self.nodelist.render(context).strip())
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\defaulttags.py", line 315, in render
+    match = condition.eval(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\defaulttags.py", line 878, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 739, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\crispy_forms\templatetags\crispy_forms_field.py", line 12, in is_checkbox
+    return isinstance(field.field.widget, forms.CheckboxInput)
+AttributeError: 'str' object has no attribute 'field'
+2022-10-06 00:32:31,079 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 316177
+2022-10-06 00:51:41,587 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'set_timezone' not found. 'set_timezone' is not a valid view function or pattern name."), <traceback object at 0x0000023A22BAA240>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_timezone' not found. 'set_timezone' is not a valid view function or pattern name.
+2022-10-06 00:51:42,742 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 179297
+2022-10-06 00:58:38,079 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x0000022DB9DDC780>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 00:58:39,225 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 87882
+2022-10-06 00:59:49,987 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x0000022D7D5F9BC0>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 00:59:51,116 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 87752
+2022-10-06 01:00:25,296 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x0000022D7DB41B40>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:00:26,358 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 87745
+2022-10-06 01:03:27,040 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x000002250681D780>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:03:28,106 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 87745
+2022-10-06 01:03:44,276 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x0000022507C1A040>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:03:45,462 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 87752
+2022-10-06 01:04:16,021 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x000001C891599FC0>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:04:17,079 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 87752
+2022-10-06 01:04:23,296 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x000001C891414780>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:04:24,318 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 87756
+2022-10-06 01:06:45,439 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x000001D5B9EF2B80>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:06:46,616 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 86876
+2022-10-06 01:09:52,028 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x00000267C8604C40>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:09:53,107 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 86883
+2022-10-06 01:10:29,079 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x000001F6E80E0500>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:10:30,119 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 86883
+2022-10-06 01:10:40,912 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x000001F6E8603C00>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:10:41,942 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 86876
+2022-10-06 01:11:31,394 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x000002749857F280>) |Internal Server Error: /user/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:11:32,343 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /user/ HTTP/1.1" 500 86769
+2022-10-06 01:15:13,932 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x00000237CEEBCA80>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:15:14,549 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x00000237CEF803C0>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:15:16,138 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 86883
+2022-10-06 01:15:38,097 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\utils\log.py | (<class 'ValueError'>, ValueError("The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead."), <traceback object at 0x00000237CEC45680>) |Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_project.views.set_timezone didn't return an HttpResponse object. It returned None instead.
+2022-10-06 01:15:39,294 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET / HTTP/1.1" 500 86883

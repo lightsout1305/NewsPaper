@@ -17,11 +17,14 @@ from django.contrib import admin
 from django.urls import path, include
 
 from NewsPaper import settings
+from news_project.views import set_timezone
 
 urlpatterns = [
+    path('i18n/', include('django.conf.urls.i18n')),
     path('admin/', admin.site.urls),
     path('main/', include('news_project.urls')),
     path('', include('protect.urls')),
+    path('tz/', set_timezone, name='set_timezone'),
     path('sign/', include('sign.urls')),
     path('accounts/', include('allauth.urls')),
 ]

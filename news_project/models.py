@@ -67,7 +67,7 @@ class Post(models.Model):
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
-        cache.delete(f'news_detail-{self.pk}')  # затем удаляем его из кэша, чтобы сбросить его
+        cache.delete(f'news_detail-{self.pk}')
 
 
 class PostCategory(models.Model):

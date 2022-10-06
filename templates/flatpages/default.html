@@ -1,15 +1,23 @@
 <!DOCTYPE html>
+{% load i18n %}
+{% load tz %}
+{% load cache %}
+{% load crispy_forms_filters %}
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>News Portal by Plotnikov</title>
+        <title>News Portal</title>
 
         {% load static %}
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <style>
+            body {background-color: {% if current_time.hour >= 19 or current_time.hour <= 7 %} darkgray {% else %} white {% endif %};}
+        </style>
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -28,18 +36,42 @@
                         <a class="nav-link" href="/main/search/">Search content</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Become author</a>
+                        <a class="nav-link" href="/">{% trans "Become author" %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/main/articles/create/">Create your articles</a>
+                        <a class="nav-link" href="/main/articles/create/">{% trans "Create your articles" %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/main/news/create/">Create your news</a>
+                        <a class="nav-link" href="/main/news/create/">{% trans "Create your news" %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/main/categories/">Subscribe to Categories</a>
+                        <a class="nav-link" href="/main/categories/">{% trans "Subcribe to Categories" %}</a>
                     </li>
-
+                    <li class="nav-item">
+                        <form class="form-select-lg" action="{% url 'set_language' %}" method="POST">
+                            {% csrf_token %}
+                            <!-- Не забываем по csrf_token для POST запросов -->
+                            <input type="hidden" name="next" value="{{ redirect_to }}" style="margin-right: 55px">
+                            <label>
+                                <select name="language" class="form-select-sm">
+                                    {% get_current_language as LANGUAGE_CODE %}
+                                    {% cache 600 welcome LANGUAGE_CODE %}
+                                    {% get_available_languages as LANGUAGES %} <!-- получаем языки -->
+                                    {% get_language_info_list for LANGUAGES as languages %} <!-- Помещаем их в список languages -->
+                                    {% for language in languages %} <!-- Итерируясь по списку, выводим их название на языке пользователя и код -->
+                                        <option value="{{ language.code }}"
+                                                {% if language.code == LANGUAGE_CODE %}
+                                                selected
+                                                {% endif %}>
+                                        {{ language.name_local }} - {{ language.code }}
+                                        </option>
+                                    {% endfor %}
+                                    {% endcache %}
+                                </select>
+                            </label>
+                            <input type="submit" value="{% trans 'Set' %}" class="btn btn-outline-light">
+                        </form>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -53,6 +85,23 @@
                 {% endblock content %}
                 </div>
             </div>
+        </div>
+        <div class="nav-item">
+            {% get_current_timezone as TIME_ZONE %}
+            <form action="{% url 'set_timezone' %}" method="post">
+                {% csrf_token %}
+                <label for="timezone">Time zone:</label>
+                <label>
+                    <select name="timezone">
+                        {% for tz in timezones %}
+                            <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected {% endif %}>{{ tz }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+                <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-dark">
+            </form>
+            {{ TIME_ZONE }}
+            {{ current_time|timezone:TIME_ZONE }}
         </div>
     </body>
 </html>

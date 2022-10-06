@@ -8,8 +8,8 @@ import logging
 logger_dr = logging.getLogger('django.request')
 logger_cn = logging.getLogger('django')
 
-logger_dr.error("Hello! I'm error in your app. Enjoy:)")
-logger_cn.error("Hello! I'm error in your app. Enjoy:)")
+# logger_dr.error("Hello! I'm error in your app. Enjoy:)")
+# logger_cn.error("Hello! I'm error in your app. Enjoy:)")
 # ----------КОНЕЦ тестирования логирования-----------
 
 

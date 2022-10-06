@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Post, Category, PostCategory, Comment, Author
 from django.core.mail import send_mail
+from modeltranslation.admin import TranslationAdmin
 
 from NewsPaper.settings import SERVER_EMAIL
 
@@ -20,6 +21,14 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ('author', 'title', 'register_date', 'content_rating')
     list_filter = ('author', 'categories', 'content_rating')
     search_fields = ('author', 'title', 'categories', 'register_date', 'content_rating')
+
+
+class PostTranslationAdmin(TranslationAdmin):
+    model = Post
+
+
+class CategoryTranslationAdmin(TranslationAdmin):
+    model = Category
 
 
 admin.site.register(Post, PostAdmin)

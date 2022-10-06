@@ -1,16 +1,15 @@
 {% extends 'flatpages/default.html' %}
 {% load custom_filters %}
 {% load crispy_forms_tags %}
+{% load i18n %}
 
-{% block title %}{{ book.title }}{% endblock title %}
+<h1>{{ onenews.title }}</h1>
 
 {% block content %}
 <div class="book-detail">
-    {% if onenews.covers %}
-    <img class="bookcover" src="{{ book.covers.url }}" alt="{{ onenews.title }}">
-    {% endif %}
     <h3>{{ onenews.title }}</h3>
     <p>Author: {{ onenews.author }}</p>
     <p>Date: {{ onenews.register_date }}</p>
+    <h5>{{ onenews.content }}</h5>
 </div>
 {% endblock content %}

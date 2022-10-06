@@ -1,0 +1,322 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-07 01:15+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\templates\account\password_reset.html:5
+#: .\templates\account\password_reset.html:9
+#: .\templates\account\password_reset_done.html:6
+#: .\templates\account\password_reset_done.html:9
+msgid "Password Reset"
+msgstr "Сбросить пароль"
+
+#: .\templates\account\password_reset.html:20
+msgid "Reset My Password"
+msgstr "Сбросить мой пароль"
+
+#: .\templates\account\password_reset.html:26
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr "Пожалуйста, свяжитесь с нами, если будут проблемы со сбросом пароля"
+
+#: .\templates\account\password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. If you have not received it please check your "
+"spam folder. Otherwise\n"
+"    contact us if you do not receive it in a few minutes."
+msgstr ""
+
+#: .\templates\account\password_reset_from_key.html:4
+#: .\templates\account\password_reset_from_key.html:7
+#: .\templates\account\password_reset_from_key_done.html:4
+#: .\templates\account\password_reset_from_key_done.html:7
+msgid "Change Password"
+msgstr ""
+
+#: .\templates\account\password_reset_from_key.html:7
+msgid "Bad Token"
+msgstr ""
+
+#: .\templates\account\password_reset_from_key.html:11
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a <a\n"
+"        href=\"%(passwd_reset_url)s\">new password reset</a>."
+msgstr ""
+
+#: .\templates\account\password_reset_from_key.html:17
+msgid "Change password"
+msgstr ""
+
+#: .\templates\account\password_reset_from_key_done.html:8
+msgid "Your password is now changed."
+msgstr ""
+
+#: .\templates\article_delete.html:5
+msgid "Delete the article"
+msgstr "Удалить статью"
+
+#: .\templates\article_delete.html:9 .\templates\article_delete.html:10
+#: .\templates\news_delete.html:9 .\templates\news_delete.html:10
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\templates\article_delete.html:9 .\templates\news_delete.html:9
+msgid "from"
+msgstr "от"
+
+#: .\templates\article_edit.html:7
+msgid "Article"
+msgstr "Статья"
+
+#: .\templates\article_edit.html:11 .\templates\news_edit.html:11
+msgid "Save"
+msgstr "Сохранить"
+
+#: .\templates\cat_sub.html:7
+msgid "Category subscribtion"
+msgstr "Подписка на категорию"
+
+#: .\templates\cat_sub.html:11
+msgid "Select the category to subscribe"
+msgstr "Выбрать категорию для подписки"
+
+#: .\templates\cat_sub.html:17
+msgid "Subscribe to"
+msgstr "Подписаться на"
+
+#: .\templates\cat_sub.html:23
+msgid "Select the category to unsubscribe"
+msgstr "Выбрать категорию для отписки"
+
+#: .\templates\cat_sub.html:29
+msgid "Unsubscribe from"
+msgstr "Отписаться от"
+
+#: .\templates\flatpages\default.html:39 .\templates\protect\index.html:12
+msgid "Become author"
+msgstr "Стать автором"
+
+#: .\templates\flatpages\default.html:42
+msgid "Create your articles"
+msgstr "Создать статью"
+
+#: .\templates\flatpages\default.html:45
+msgid "Create your news"
+msgstr "Создать новость"
+
+#: .\templates\flatpages\default.html:48
+msgid "Subcribe to Categories"
+msgstr "Подписаться на категории"
+
+#: .\templates\flatpages\default.html:72 .\templates\flatpages\default.html:101
+msgid "Set"
+msgstr "Выбрать"
+
+#: .\templates\news.html:8 .\templates\news_edit.html:7
+msgid "News"
+msgstr "Новость"
+
+#: .\templates\news.html:12 .\templates\news_search.html:11
+msgid "Main news"
+msgstr "Главные новости"
+
+#: .\templates\news.html:13 .\templates\news_search.html:12
+msgid "Number of news"
+msgstr "Количество новостей"
+
+#: .\templates\news.html:18 .\templates\news_project\notification.html:11
+#: .\templates\news_search.html:21
+msgid "Title"
+msgstr "Заголовок"
+
+#: .\templates\news.html:19 .\templates\news_search.html:22
+msgid "Release date"
+msgstr "Дата публикации"
+
+#: .\templates\news.html:20 .\templates\news_search.html:23
+msgid "Text"
+msgstr "Текст"
+
+#: .\templates\news.html:31 .\templates\news_search.html:34
+msgid "No news yet..."
+msgstr "Пока новостей нет..."
+
+#: .\templates\news_delete.html:5
+msgid "Delete the news"
+msgstr "Удалить новость"
+
+#: .\templates\news_project\notification.html:7
+msgid "Mailing list"
+msgstr "Новостная рассылка"
+
+#: .\templates\news_project\notification.html:10
+#: .\templates\news_project\subscription_success.html:9
+#: .\templates\news_project\weekly_articles.html:9
+msgid "Hello"
+msgstr "Приветствуем"
+
+#: .\templates\news_project\notification.html:10
+msgid "A new post in your favorite category is here!"
+msgstr "Новый пост по вашей любимой категории уже здесь!"
+
+#: .\templates\news_project\notification.html:12
+msgid "Summary:"
+msgstr "Краткое содержание:"
+
+#: .\templates\news_project\notification.html:13
+msgid "To read the article, please follow"
+msgstr "Чтобы прочитать статью, пожалуйста, перейдите"
+
+#: .\templates\news_project\notification.html:13
+msgid "the link"
+msgstr "по ссылке"
+
+#: .\templates\news_project\notification.html:14
+msgid "Sincerely yours,"
+msgstr "С уважением,"
+
+#: .\templates\news_project\notification.html:15
+#: .\templates\news_project\subscription_success.html:11
+msgid "NewsPaper.inc"
+msgstr "Редакция NewsPaper.inc"
+
+#: .\templates\news_project\subscription_success.html:6
+msgid "Subscription success"
+msgstr "Подписка прошла успешно"
+
+#: .\templates\news_project\subscription_success.html:9
+msgid "You have subscribed on the category"
+msgstr "Вы подписались на категорию"
+
+#: .\templates\news_project\subscription_success.html:10
+msgid "Sincerely yours"
+msgstr "С уважением"
+
+#: .\templates\news_project\weekly_articles.html:6
+#, fuzzy
+#| msgid "Create your articles"
+msgid "Weekly articles feed"
+msgstr "Создать статью"
+
+#: .\templates\news_project\weekly_articles.html:9
+msgid "Your fresh weekly feed on the"
+msgstr "Свежая подборка статей и новостей по категории"
+
+#: .\templates\news_project\weekly_articles.html:9
+msgid "is already here"
+msgstr "уже здесь"
+
+#: .\templates\news_project\weekly_articles.html:11
+#, fuzzy
+#| msgid "Title"
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: .\templates\news_project\weekly_articles.html:12
+msgid "Summary"
+msgstr "Краткое содержание"
+
+#: .\templates\news_search.html:15
+msgid "Search"
+msgstr "Поиск"
+
+#: .\templates\profile_update.html:6
+msgid "Change the profile"
+msgstr "Изменить профиль"
+
+#: .\templates\profile_update.html:12
+msgid "Update the profile"
+msgstr "Обновить профиль"
+
+#: .\templates\protect\index.html:5
+msgid "The authorized user page of"
+msgstr "Страница авторизованного пользователя"
+
+#: .\templates\protect\index.html:8
+msgid "Here is the personal information of every authorized user"
+msgstr ""
+"Здесь может содержаться личная информация каждого авторизованного "
+"пользователя"
+
+#: .\templates\protect\index.html:16
+#, fuzzy
+#| msgid "Change the profile"
+msgid "Change your profile"
+msgstr "Изменить профиль"
+
+#: .\templates\protect\index.html:19
+msgid "Quit"
+msgstr "Выйти"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:7
+#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:221
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:207
+#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:207
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
+#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:222
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
+#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:231
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:240
+#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:240
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
+#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:249
+msgid "Connect, get help, or contribute"
+msgstr ""

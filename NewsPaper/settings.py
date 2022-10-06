@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,6 +77,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.middleware.cache.UpdateCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -85,6 +87,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.cache.FetchFromCacheMiddleware',
+    'news_project.middlewares.TimezoneMiddleware',
 ]
 
 ROOT_URLCONF = 'NewsPaper.urls'
@@ -100,6 +103,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'news_project.context_processors.navigate_context',
             ],
         },
     },
@@ -199,10 +203,10 @@ LOGGING = {
             '()': 'django.utils.log.RequireDebugFalse'  # обрабатываем только когда параметр DEBUG = False в settings.py
         },
         'require_debug_true': {
-            '()': 'django.utils.log.RequireDebugTrue' # обрабатываем только когда параметр DEBUG = True
+            '()': 'django.utils.log.RequireDebugTrue'  # обрабатываем только когда параметр DEBUG = True
         },
     },
-    'handlers':{
+    'handlers': {
         'console_i': {
             'level': 'INFO',
             'filters': ['require_debug_true'],
@@ -312,6 +316,12 @@ LOGGING = {
 
 LANGUAGE_CODE = 'en-us'
 
+LANGUAGES = [
+    ('en-us', 'English'),
+    ('ru', 'Русский'),
+    ('fr', 'Français'),
+]
+
 TIME_ZONE = 'Europe/Moscow'
 
 CELERY_ENABLE_UTC = False
@@ -321,6 +331,9 @@ USE_I18N = True
 
 USE_TZ = True
 
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale')
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

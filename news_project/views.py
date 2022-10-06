@@ -1,21 +1,21 @@
+import pytz
 import logging
-
 from django.http import HttpResponse
+from django.utils import timezone
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 from .models import Post, Category, CategorySubscribers, Author, Comment
 from .filters import PostFilter
 from .forms import PostForm
 from django.urls import reverse_lazy
-from django.shortcuts import redirect
+from django.shortcuts import redirect, render
 from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.core.mail import EmailMultiAlternatives
 from django.core.cache import cache
 from django.template.loader import render_to_string
 
-from NewsPaper.settings import SERVER_EMAIL
+from NewsPaper.settings import SERVER_EMAIL, TIME_ZONE
 
-import logging
 
 logger = logging.getLogger('django')
 
@@ -27,6 +27,22 @@ def index_test(request):
     logger.error("Hello! --------ERROR--------Enjoy:)")
     logger.critical("Hello! --------CRITICAL--------Enjoy:)")
     return HttpResponse("<p> Сообщение для тестирования </p>")
+
+
+def set_timezone(request):
+    user_timezone = pytz.timezone(
+        request.session.get('django_timezone') or TIME_ZONE
+    )
+    current_time = timezone.now().astimezone(user_timezone)
+    context = {
+        'current_time': current_time,
+        'timezones': pytz.common_timezones,
+    }
+    if request.method == 'POST':
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect('content_list')
+
+    render(request, 'flatpages/default.html', context)
 
 
 class NewsList(ListView):

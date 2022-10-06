@@ -2,32 +2,33 @@
 
 {% load custom_filters %}
 {% load custom_tags %}
+{% load i18n %}
 
 {% block title %}
-News
+{% trans "News" %}
 {% endblock title %}
 
 {% block content %}
-    <h1>Главные новости</h1>
-    <h3>Количество новостей - {{ news|length }}</h3>
+    <h1>{% trans "Main news" %}</h1>
+    <h3>{% trans "Number of news" %} - {{ news|length }}</h3>
     <hr>
     {% if news %}
         <table>
             <tr>
-                <td><h5>Заголовок</h5></td>
-                <td><h5>Дата публикации</h5></td>
-                <td><h5>Текст</h5></td>
+                <td><h5>{% trans "Title" %}</h5></td>
+                <td><h5>{% trans "Release date" %}</h5></td>
+                <td><h5>{% trans "Text" %}</h5></td>
             </tr>
             {% for onenews in news %}
             <tr>
-                <td align="left"><a href="search/{{ onenews.id }}" class="btn-sm">{{ onenews.title|censor }}</a> </td>
+                <td align="left"><a href="search/{{ onenews.id }}" class="text-sm-start">{{ onenews.title|censor }}</a> </td>
                 <td>{{ onenews.register_date|date:'M d Y' }}</td>
                 <td align="left">{{ onenews.content|truncatechars:20|censor }}</td>
             </tr>
             {% endfor %}
         </table>
     {% else %}
-    <h2>Новостей пока нет...</h2>
+    <h2>{% trans "No news yet..." %}</h2>
     {% endif %}
 
     {% if page_obj.has_previous %}

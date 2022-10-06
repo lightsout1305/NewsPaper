@@ -3,7 +3,7 @@ from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 
 from .models import CategorySubscribers, Category, PostCategory
-from Project.settings import SERVER_EMAIL
+from NewsPaper.settings import SERVER_EMAIL
 
 
 @shared_task

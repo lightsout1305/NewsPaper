@@ -1,13 +1,14 @@
 {% extends 'flatpages/default.html' %}
 
 {% load crispy_forms_filters %}
+{% load i18n %}
 
-{% block title %} Profile update {% endblock title %}
+{% block title %} {% trans "Change the profile" %}{% endblock title %}
 
 {% block content %}
 <form method="POST">
     {% csrf_token %}
     {{ form|crispy }}
-    <input type="submit" class="btn btn-outline-dark" value="Обновить профиль">
+    <input type="submit" class="btn btn-outline-dark" value="{% trans "Update the profile" %}">
 </form>
 {% endblock content %}
