@@ -11,8 +11,13 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 import os.path
+import environs
 from pathlib import Path
 import logging
+
+env = environs.Env()
+
+env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
@@ -24,10 +29,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('NEWSPAPER_DJANGO_KEY')
+SECRET_KEY = env.str('NEWSPAPER_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DEBUG', default=False)
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -58,8 +63,24 @@ INSTALLED_APPS = [
     'sign.apps.SignConfig',
     'protect.apps.ProtectConfig',
     'django_apscheduler.apps.DjangoApschedulerConfig',
-
+    'rest_framework',
+    'drf_spectacular',
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticatedOrReadOnly",
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 10,
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'NewsPaper Project',
+    'DESCRIPTION': 'A simple news and articles project',
+    'VERSION': '1.0.0',
+}
 
 APSCHEDULER_DATETIME_FORMAT = 'N j, Y, f:s a'
 
@@ -86,8 +107,8 @@ MIDDLEWARE = [
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     'django.middleware.common.CommonMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
     'news_project.middlewares.TimezoneMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
 ROOT_URLCONF = 'NewsPaper.urls'
@@ -167,7 +188,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False, # отключать ли предустановленные настройки логирования Джанго
+    'disable_existing_loggers': False,
     'formatters': {
         # INFO format
         'i_format': {
@@ -349,20 +370,20 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-
-EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = env.str('EMAIL_HOST')
 EMAIL_PORT = 465
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_USER = env.str('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env.str('EMAIL_HOST_PASSWORD')
 EMAIL_USE_SSL = True
 
 ADMINS = [
-    (os.getenv('ADMIN_NICKNAME'), os.getenv('ADMIN_EMAIL')),
+    (env.str('ADMIN_NICKNAME'), env.str('ADMIN_EMAIL')),
 ]
 
-SERVER_EMAIL = EMAIL_HOST_USER + '@mail.ru'
+SERVER_EMAIL = env.str('SERVER_EMAIL')
 
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER + '@mail.ru'
+DEFAULT_FROM_EMAIL = env.str('SERVER_EMAIL')
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 

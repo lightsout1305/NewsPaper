@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 01:15+0300\n"
+"POT-Creation-Date: 2022-10-12 23:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,41 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\templates\account\email\email_confirmation_message.html:7
+msgid "Confirmation"
+msgstr ""
+
+#: .\templates\account\email\email_confirmation_message.html:11
+msgid "Thank you for the sign up"
+msgstr "Merci de votre enregistrement"
+
+#: .\templates\account\email\email_confirmation_message.html:12
+msgid "To activate your account, please follow"
+msgstr "Pour lire l'article, veuillez suivre"
+
+#: .\templates\account\email\email_confirmation_message.html:12
+#: .\templates\news_project\notification.html:13
+msgid "the link"
+msgstr "le lien"
+
+#: .\templates\account\email\email_confirmation_message.html:13
+#: .\templates\news_project\subscription_success.html:10
+msgid "Sincerely yours"
+msgstr "Sincèrement vôtre"
+
+#: .\templates\account\login.html:7 .\templates\account\login.html:13
+msgid "Log In"
+msgstr "Connectez-vous"
+
+#: .\templates\account\login.html:15
+msgid "Forgot password?"
+msgstr "Le mot de passe oublié?"
+
+#: .\templates\account\login.html:16 .\templates\account\signup.html:7
+#: .\templates\account\signup.html:13
+msgid "Sign Up"
+msgstr "Enregistrez-vous"
 
 #: .\templates\account\password_reset.html:5
 #: .\templates\account\password_reset.html:9
@@ -31,9 +66,7 @@ msgstr "Réinitialiser mon mot de passe"
 
 #: .\templates\account\password_reset.html:26
 msgid "Please contact us if you have any trouble resetting your password."
-msgstr ""
-"Veuillez nous contacter si vous rencontrez des difficultés pour "
-"réinitialiser votre mot de passe"
+msgstr "Veuillez nous contacter si vous rencontrez des difficultés pour réinitialiser votre mot de passe"
 
 #: .\templates\account\password_reset_done.html:15
 msgid ""
@@ -69,6 +102,10 @@ msgstr ""
 msgid "Your password is now changed."
 msgstr ""
 
+#: .\templates\account\signup.html:15
+msgid "Sign Up via Google"
+msgstr "Enregistrez-vous par Google"
+
 #: .\templates\article_delete.html:5
 msgid "Delete the article"
 msgstr "Supprimer l'article"
@@ -91,8 +128,6 @@ msgid "Save"
 msgstr "Sauvegarder"
 
 #: .\templates\cat_sub.html:7
-#, fuzzy
-#| msgid "Category subscription"
 msgid "Category subscribtion"
 msgstr "Abonnement à la catégorie"
 
@@ -106,11 +141,20 @@ msgstr "Abonnez-vous à"
 
 #: .\templates\cat_sub.html:23
 msgid "Select the category to unsubscribe"
-msgstr "Choisissew la catégorie à vous désabonner"
+msgstr "Choisissez la catégorie à vous désabonner"
 
 #: .\templates\cat_sub.html:29
 msgid "Unsubscribe from"
 msgstr "Désabonnez-vous de"
+
+#: .\templates\flatpages\default.html:26 .\templates\news.html:8
+#: .\templates\news_edit.html:7
+msgid "News"
+msgstr "Actualités"
+
+#: .\templates\flatpages\default.html:36
+msgid "Search content"
+msgstr "Chercher"
 
 #: .\templates\flatpages\default.html:39 .\templates\protect\index.html:12
 msgid "Become author"
@@ -131,10 +175,6 @@ msgstr "Abonnez-vous aux Categories"
 #: .\templates\flatpages\default.html:72 .\templates\flatpages\default.html:101
 msgid "Set"
 msgstr "Choisir"
-
-#: .\templates\news.html:8 .\templates\news_edit.html:7
-msgid "News"
-msgstr "Actualités"
 
 #: .\templates\news.html:12 .\templates\news_search.html:11
 msgid "Main news"
@@ -187,10 +227,6 @@ msgstr "Sommaire:"
 msgid "To read the article, please follow"
 msgstr "Pour lire l'article, veuillez suivre"
 
-#: .\templates\news_project\notification.html:13
-msgid "the link"
-msgstr "le lien"
-
 #: .\templates\news_project\notification.html:14
 msgid "Sincerely yours,"
 msgstr "Sincèrement vôtre,"
@@ -208,13 +244,7 @@ msgstr "Succès de l'abonnement"
 msgid "You have subscribed on the category"
 msgstr "Vous vous êtes abonné à la catégorie"
 
-#: .\templates\news_project\subscription_success.html:10
-msgid "Sincerely yours"
-msgstr "Sincèrement vôtre"
-
 #: .\templates\news_project\weekly_articles.html:6
-#, fuzzy
-#| msgid "Create your articles"
 msgid "Weekly articles feed"
 msgstr "Créez vos articles"
 
@@ -227,8 +257,6 @@ msgid "is already here"
 msgstr "est déjà ici"
 
 #: .\templates\news_project\weekly_articles.html:11
-#, fuzzy
-#| msgid "Title"
 msgid "Title:"
 msgstr "Intitulé"
 
@@ -257,8 +285,6 @@ msgid "Here is the personal information of every authorized user"
 msgstr "Voilà l'information personnelle de chaque utilisateur autorisé"
 
 #: .\templates\protect\index.html:16
-#, fuzzy
-#| msgid "Change the profile"
 msgid "Change your profile"
 msgstr "Modifier le profil"
 

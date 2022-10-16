@@ -2,17 +2,19 @@ import pytz
 import logging
 from django.http import HttpResponse
 from django.utils import timezone
-from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
-from .models import Post, Category, CategorySubscribers, Author, Comment
-from .filters import PostFilter
-from .forms import PostForm
-from django.urls import reverse_lazy
+from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView, FormView
+from django.urls import reverse_lazy, reverse
 from django.shortcuts import redirect, render
 from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.core.mail import EmailMultiAlternatives
 from django.core.cache import cache
 from django.template.loader import render_to_string
+
+from .models import Post, Category, CategorySubscribers, Author, Comment
+from .filters import PostFilter
+from .forms import PostForm, CommentForm
+
 
 from NewsPaper.settings import SERVER_EMAIL, TIME_ZONE
 
@@ -139,8 +141,9 @@ class ArticleDelete(DeleteView):
     success_url = reverse_lazy('content_list')
 
 
-class NewsDetail(DetailView):
+class NewsDetail(FormView, DetailView):
     model = Post
+    form_class = CommentForm
     template_name = 'detail.html'
     context_object_name = 'onenews'
 
@@ -152,11 +155,20 @@ class NewsDetail(DetailView):
             cache.set(f'news_detail-{self.kwargs["pk"]}', obj)
         return obj
 
+    def post(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        return super().post(request, *args, **kwargs)
 
-class CommentView(DetailView):
-    model = Comment
-    template_name = 'detail.html'
-    context_object_name = 'comment'
+    def form_valid(self, form):
+        comment = form.save(commit=False)
+        comment.post = self.object
+        comment.user = self.request.user
+        comment.save()
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        post = self.get_object()
+        return reverse("news_detail", kwargs={"pk": post.pk})
 
 
 class CategoryDetail(PermissionRequiredMixin, ListView):
@@ -235,5 +247,28 @@ def remove_subscribtion(request, pk):
         CategorySubscribers.objects.filter(linked_category_id=catgr.id, linked_user_id=user.id).delete()
     return redirect('/main/')
 
+
+def add_comment_like(request, pk):
+    comment = Comment.objects.get(id=pk)
+    comment.like()
+    return redirect(request.META.get('HTTP_REFERER'))
+
+
+def add_comment_dislike(request, pk):
+    comment = Comment.objects.get(id=pk)
+    comment.dislike()
+    return redirect(request.META.get('HTTP_REFERER'))
+
+
+def update_rating_up(request, pk):
+    post = Post.objects.get(id=pk)
+    post.like()
+    return redirect(request.META.get('HTTP_REFERER'))
+
+
+def update_rating_down(request, pk):
+    post = Post.objects.get(id=pk)
+    post.dislike()
+    return redirect(request.META.get('HTTP_REFERER'))
 
 # Create your views here.

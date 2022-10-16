@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 01:15+0300\n"
+"POT-Creation-Date: 2022-10-12 23:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,41 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\templates\account\email\email_confirmation_message.html:7
+msgid "Confirmation"
+msgstr "Подтверждение регистрации"
+
+#: .\templates\account\email\email_confirmation_message.html:11
+msgid "Thank you for the sign up"
+msgstr "Спасибо за регистрацию"
+
+#: .\templates\account\email\email_confirmation_message.html:12
+msgid "To activate your account, please follow"
+msgstr "Чтобы прочитать статью, пожалуйста, перейдите"
+
+#: .\templates\account\email\email_confirmation_message.html:12
+#: .\templates\news_project\notification.html:13
+msgid "the link"
+msgstr "по ссылке"
+
+#: .\templates\account\email\email_confirmation_message.html:13
+#: .\templates\news_project\subscription_success.html:10
+msgid "Sincerely yours"
+msgstr "С уважением"
+
+#: .\templates\account\login.html:7 .\templates\account\login.html:13
+msgid "Log In"
+msgstr "Войти"
+
+#: .\templates\account\login.html:15
+msgid "Forgot password?"
+msgstr "Забыли пароль?"
+
+#: .\templates\account\login.html:16 .\templates\account\signup.html:7
+#: .\templates\account\signup.html:13
+msgid "Sign Up"
+msgstr "Регистрация"
 
 #: .\templates\account\password_reset.html:5
 #: .\templates\account\password_reset.html:9
@@ -69,6 +104,10 @@ msgstr ""
 msgid "Your password is now changed."
 msgstr ""
 
+#: .\templates\account\signup.html:15
+msgid "Sign Up via Google"
+msgstr "Регистрация через Google"
+
 #: .\templates\article_delete.html:5
 msgid "Delete the article"
 msgstr "Удалить статью"
@@ -110,6 +149,15 @@ msgstr "Выбрать категорию для отписки"
 msgid "Unsubscribe from"
 msgstr "Отписаться от"
 
+#: .\templates\flatpages\default.html:26 .\templates\news.html:8
+#: .\templates\news_edit.html:7
+msgid "News"
+msgstr "Новость"
+
+#: .\templates\flatpages\default.html:36
+msgid "Search content"
+msgstr "Поиск"
+
 #: .\templates\flatpages\default.html:39 .\templates\protect\index.html:12
 msgid "Become author"
 msgstr "Стать автором"
@@ -129,10 +177,6 @@ msgstr "Подписаться на категории"
 #: .\templates\flatpages\default.html:72 .\templates\flatpages\default.html:101
 msgid "Set"
 msgstr "Выбрать"
-
-#: .\templates\news.html:8 .\templates\news_edit.html:7
-msgid "News"
-msgstr "Новость"
 
 #: .\templates\news.html:12 .\templates\news_search.html:11
 msgid "Main news"
@@ -185,10 +229,6 @@ msgstr "Краткое содержание:"
 msgid "To read the article, please follow"
 msgstr "Чтобы прочитать статью, пожалуйста, перейдите"
 
-#: .\templates\news_project\notification.html:13
-msgid "the link"
-msgstr "по ссылке"
-
 #: .\templates\news_project\notification.html:14
 msgid "Sincerely yours,"
 msgstr "С уважением,"
@@ -206,13 +246,7 @@ msgstr "Подписка прошла успешно"
 msgid "You have subscribed on the category"
 msgstr "Вы подписались на категорию"
 
-#: .\templates\news_project\subscription_success.html:10
-msgid "Sincerely yours"
-msgstr "С уважением"
-
 #: .\templates\news_project\weekly_articles.html:6
-#, fuzzy
-#| msgid "Create your articles"
 msgid "Weekly articles feed"
 msgstr "Создать статью"
 
@@ -225,8 +259,6 @@ msgid "is already here"
 msgstr "уже здесь"
 
 #: .\templates\news_project\weekly_articles.html:11
-#, fuzzy
-#| msgid "Title"
 msgid "Title:"
 msgstr "Заголовок:"
 
@@ -257,8 +289,6 @@ msgstr ""
 "пользователя"
 
 #: .\templates\protect\index.html:16
-#, fuzzy
-#| msgid "Change the profile"
 msgid "Change your profile"
 msgstr "Изменить профиль"
 

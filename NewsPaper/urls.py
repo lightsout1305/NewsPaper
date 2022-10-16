@@ -15,16 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 
 from NewsPaper import settings
 from news_project.views import set_timezone
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
+    path('tz/', set_timezone, name='set_timezone'),
     path('admin/', admin.site.urls),
     path('main/', include('news_project.urls')),
     path('', include('protect.urls')),
-    path('tz/', set_timezone, name='set_timezone'),
+    path('api/', include('apis.urls')),
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    path('api/schema/redoc', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+    path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     path('sign/', include('sign.urls')),
     path('accounts/', include('allauth.urls')),
 ]
