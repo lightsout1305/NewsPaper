@@ -4,53 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d96f2c7-8c98-4f89-8a4e-ec4ce0be10b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apis/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apis/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apis/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apis/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apis/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apis/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apis/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apis/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apis/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apis/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/openapi-schema.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9acad9d0-3b66-4f75-b19a-d9d8dadcda49.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9acad9d0-3b66-4f75-b19a-d9d8dadcda49.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/celerybeat-schedule" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/ru/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/locale/ru/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/errors.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/security.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/security.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_project/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_project/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_project/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_project/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/email/email_confirmation_message.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/email/email_confirmation_message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/flatpages/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/flatpages/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news_project/notification.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news_project/notification.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/allauth/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/allauth/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/allauth/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/allauth/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admin/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admin/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admindocs/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admindocs/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admindocs/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admindocs/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/gis/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/gis/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/gis/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/gis/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django_filters/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django_filters/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django_filters/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django_filters/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
-    </list>
+    <list default="true" id="9d96f2c7-8c98-4f89-8a4e-ec4ce0be10b3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -311,7 +265,7 @@
       <workItem from="1665692127114" duration="12482000" />
       <workItem from="1665786397523" duration="5510000" />
       <workItem from="1665874681617" duration="2919000" />
-      <workItem from="1665932905739" duration="20722000" />
+      <workItem from="1665932905739" duration="21134000" />
     </task>
     <servers />
   </component>
