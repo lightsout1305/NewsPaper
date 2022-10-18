@@ -24,18 +24,18 @@
 <hr>
     {% if onenews.author.author_user == request.user %}
         {% if onenews.choice == 'NEWS' %}
-            <a href="http://127.0.0.1:8000/main/news/{{ onenews.id }}/edit/">
+            <a href="https://{{ site }}/main/news/{{ onenews.id }}/edit/">
                 <button class="btn btn-outline-dark">{% trans "Change" %}</button>
             </a> |
-            <a href="http://127.0.0.1:8000/main/news/{{ onenews.id }}/delete/">
+            <a href="https://{{ site }}/main/news/{{ onenews.id }}/delete/">
                 <button class="btn btn-outline-dark">{% trans "Delete" %}</button>
             </a>
         {% endif %}
         {% if onenews.choice == 'ARTL' %}
-            <a href="http://127.0.0.1:8000/main/articles/{{ onenews.id }}/edit/">
+            <a href="https://{{ site }}/main/articles/{{ onenews.id }}/edit/">
                 <button class="btn btn-outline-dark">{% trans "Change" %}</button>
             </a>
-            <a href="http://127.0.0.1:8000/main/articles/{{ onenews.id }}/delete/">
+            <a href="https://{{ site }}/main/articles/{{ onenews.id }}/delete/">
                 <button class="btn btn-outline-dark">{% trans "Delete" %}</button>
             </a>
         {% endif %}

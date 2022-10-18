@@ -1,5 +1,7 @@
 import pytz
 import logging
+
+from django.contrib.sites.models import Site
 from django.http import HttpResponse
 from django.utils import timezone
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView, FormView
@@ -169,6 +171,12 @@ class NewsDetail(FormView, DetailView):
     def get_success_url(self):
         post = self.get_object()
         return reverse("news_detail", kwargs={"pk": post.pk})
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['site'] = Site.objects.get_current().domain
+        return context
+
 
 
 class CategoryDetail(PermissionRequiredMixin, ListView):
