@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d96f2c7-8c98-4f89-8a4e-ec4ce0be10b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_project/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_project/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/allauth/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/allauth/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/allauth/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/allauth/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admin/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admin/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admindocs/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admindocs/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admindocs/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/admindocs/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/gis/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/gis/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/gis/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django/contrib/gis/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django_filters/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django_filters/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django_filters/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/virtualenv/lib/python3.8/site-packages/django_filters/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
-    </list>
+    <list default="true" id="9d96f2c7-8c98-4f89-8a4e-ec4ce0be10b3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -283,7 +268,7 @@
       <workItem from="1665932905739" duration="21134000" />
       <workItem from="1666001192353" duration="469000" />
       <workItem from="1666121658178" duration="8238000" />
-      <workItem from="1666475834810" duration="1673000" />
+      <workItem from="1666475834810" duration="1988000" />
     </task>
     <servers />
   </component>
