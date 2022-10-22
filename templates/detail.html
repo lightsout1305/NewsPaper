@@ -13,14 +13,16 @@
     <p>Date: {{ onenews.register_date }} &middot;
     Rating: {{ onenews.content_rating }}</p>
     <h5>{{ onenews.content }}</h5>
-    <form style="margin-bottom: 5px" action="{% url 'add_content_like' onenews.pk %}">
-        {% csrf_token %}
-        <button class="btn btn-outline-success">Like</button>
-    </form>
-    <form action="{% url 'add_content_dislike' onenews.pk %}">
-        {% csrf_token %}
-        <button class="btn btn-outline-danger">Dislike</button>
-    </form>
+    {% if request.user.is_authenticated %}
+        <form style="margin-bottom: 5px" action="{% url 'add_content_like' onenews.pk %}">
+            {% csrf_token %}
+            <button class="btn btn-outline-success">Like</button>
+        </form>
+        <form action="{% url 'add_content_dislike' onenews.pk %}">
+            {% csrf_token %}
+            <button class="btn btn-outline-danger">Dislike</button>
+        </form>
+    {% endif %}
 <hr>
     {% if onenews.author.author_user == request.user %}
         {% if onenews.choice == 'NEWS' %}
@@ -46,23 +48,28 @@
     {% if com %}
         <p align="left"><strong>{{ com.user }}</strong> &middot; {{ com.comment_text }}</p>
         <p align="left">{% trans "Rating" %}: {{ com.comment_rating }}</p>
-        <form style="margin-bottom: 10px" action="{% url 'add_comment_like' com.pk %}" method="post">
-            {% csrf_token %}
-            <button style="margin-right: 1600px" class="btn btn-outline-success">Like</button>
-        </form>
-
-        <form action="{% url 'add_comment_dislike' com.pk %}" method="post">
-            {% csrf_token %}
-            <button style="margin-right: 1600px" class="btn btn-outline-danger">Dislike</button>
-        </form>
+            {% if request.user.is_authenticated %}
+                <form style="margin-bottom: 10px" action="{% url 'add_comment_like' com.pk %}" method="post">
+                    {% csrf_token %}
+                    <button style="margin-right: 1600px" class="btn btn-outline-success">Like</button>
+                </form>
+                <form action="{% url 'add_comment_dislike' com.pk %}" method="post">
+                    {% csrf_token %}
+                    <button style="margin-right: 1600px" class="btn btn-outline-danger">Dislike</button>
+                </form>
+            {% endif %}
     {% endif %}
     <hr>
 {% endfor %}
 
 
 <h4 align="left">{% trans "Add a comment" %}</h4>
-<form action="" method="post">{% csrf_token %}
-    {{ form|crispy }}
-    <p align="left"><button class="btn btn-outline-dark" type="submit">Save</button></p>
-</form>
+{% if request.user.is_authenticated %}
+    <form action="" method="post">{% csrf_token %}
+        {{ form|crispy }}
+        <p align="left"><button class="btn btn-outline-dark" type="submit">Save</button></p>
+    </form>
+{% else %}
+    <h5>{% trans "To leave a comment, please" %}<a href="{{ site }}">{% trans "log in" %}</a></h5>
+{% endif %}
 {% endblock content %}

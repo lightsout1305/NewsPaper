@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-12 23:16+0300\n"
+"POT-Creation-Date: 2022-10-23 01:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgstr "Спасибо за регистрацию"
 
 #: .\templates\account\email\email_confirmation_message.html:12
 msgid "To activate your account, please follow"
-msgstr "Чтобы прочитать статью, пожалуйста, перейдите"
+msgstr "Чтобы активировать аккаунт, пожалуйста, перейдите"
 
 #: .\templates\account\email\email_confirmation_message.html:12
 #: .\templates\news_project\notification.html:13
@@ -113,6 +113,7 @@ msgid "Delete the article"
 msgstr "Удалить статью"
 
 #: .\templates\article_delete.html:9 .\templates\article_delete.html:10
+#: .\templates\detail.html:33 .\templates\detail.html:41
 #: .\templates\news_delete.html:9 .\templates\news_delete.html:10
 msgid "Delete"
 msgstr "Удалить"
@@ -148,6 +149,30 @@ msgstr "Выбрать категорию для отписки"
 #: .\templates\cat_sub.html:29
 msgid "Unsubscribe from"
 msgstr "Отписаться от"
+
+#: .\templates\detail.html:30 .\templates\detail.html:38
+msgid "Change"
+msgstr "Изменить"
+
+#: .\templates\detail.html:46
+msgid "Comments"
+msgstr "Комментарии"
+
+#: .\templates\detail.html:50
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: .\templates\detail.html:66
+msgid "Add a comment"
+msgstr "Добавить комментарий"
+
+#: .\templates\detail.html:73
+msgid "To leave a comment, please"
+msgstr "Чтобы добавить комментарий, пожалуйста,"
+
+#: .\templates\detail.html:73
+msgid "log in"
+msgstr "авторизуйтесь"
 
 #: .\templates\flatpages\default.html:26 .\templates\news.html:8
 #: .\templates\news_edit.html:7

@@ -175,8 +175,8 @@ class NewsDetail(FormView, DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['site'] = Site.objects.get_current().domain
+        context['comment'] = Comment
         return context
-
 
 
 class CategoryDetail(PermissionRequiredMixin, ListView):
