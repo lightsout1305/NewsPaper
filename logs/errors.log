@@ -1685,3 +1685,759 @@ Traceback (most recent call last):
     return func(self._wrapped, *args)
 AttributeError: 'User' object has no attribute 'is_authenticatedobj'
 2022-10-16 23:42:49,651 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /api/articles/78/ HTTP/1.1" 500 132740
+2023-11-08 13:07:09,614 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:07:09,614 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:07:12,013 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:07:14,276 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:07:19,038 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:07:21,262 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:07:39,221 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:07:39,225 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:07:41,436 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:07:43,686 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:10:18,510 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:10:18,518 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:10:20,832 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:10:23,393 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:10:37,692 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:10:37,699 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:10:40,020 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:10:42,434 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:11:07,073 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:11:07,085 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:11:10,008 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:11:12,515 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:12:28,320 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:12:28,320 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:12:30,582 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:12:33,023 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:12:40,341 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:12:40,346 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:12:42,623 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:12:44,878 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:17:18,090 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:17:18,096 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:17:20,388 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:17:22,703 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:17:55,925 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:17:55,941 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:17:58,190 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:00,642 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:30,092 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:30,108 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:32,375 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:34,704 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:40,914 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:43,163 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:49,783 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:49,783 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:52,009 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:18:54,259 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:50:28,834 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:50:28,836 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:50:31,233 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:50:33,488 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:50:50,027 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:50:52,392 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:51:00,010 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:51:00,015 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:51:02,254 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:51:04,555 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:13,254 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:13,263 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:15,512 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:15,735 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:22,220 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:29,199 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:29,205 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:31,476 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:33,773 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:56,472 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:56,472 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:56:58,750 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:57:01,125 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:57:13,401 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:57:13,401 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:57:15,404 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:57:16,133 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:57:20,206 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:57:22,446 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:58:24,593 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:58:24,593 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:58:26,904 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:58:29,173 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:58:38,320 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:58:38,336 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:58:40,660 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:58:42,965 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:59:21,735 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:59:21,750 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:59:24,009 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:59:26,333 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:59:42,472 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:59:42,488 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:59:44,848 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 13:59:47,100 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:00:41,461 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:00:41,469 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:00:43,714 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:00:45,923 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:01:06,408 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:01:06,412 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:01:08,684 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:01:10,852 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:02:38,219 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:02:38,219 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:02:40,442 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:02:42,676 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:03:15,975 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:03:15,981 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:03:18,237 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:03:20,570 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:03:37,989 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:03:37,989 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:03:40,260 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:03:42,614 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:06:21,813 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:06:24,126 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:06:30,325 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:06:30,331 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:06:32,603 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:06:34,876 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:06:50,689 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:06:50,689 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:06:52,980 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:06:55,235 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:13:08,957 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'smtplib.SMTPAuthenticationError'>, SMTPAuthenticationError(535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED'), <traceback object at 0x000001C7585A4180>) |Internal Server Error: /main/news/create/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\views.py", line 89, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 135, in form_valid
+    self.object = form.save()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 549, in save
+    self._save_m2m()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 530, in _save_m2m
+    f.save_form_data(self.instance, cleaned_data[f.name])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related.py", line 1928, in save_form_data
+    getattr(instance, self.attname).set(data)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1130, in set
+    self.add(*new_objs, through_defaults=through_defaults)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1048, in add
+    self._add_items(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1313, in _add_items
+    signals.m2m_changed.send(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 176, in send
+    return [
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\signals.py", line 34, in notify_subscribers
+    msg.send()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Python3.10\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Python3.10\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Python3.10\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
+2023-11-08 14:13:11,303 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /main/news/create/ HTTP/1.1" 500 190779
+2023-11-08 14:18:30,470 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'smtplib.SMTPAuthenticationError'>, SMTPAuthenticationError(535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED'), <traceback object at 0x000001C758B6D800>) |Internal Server Error: /main/news/create/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\views.py", line 89, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 135, in form_valid
+    self.object = form.save()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 549, in save
+    self._save_m2m()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 530, in _save_m2m
+    f.save_form_data(self.instance, cleaned_data[f.name])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related.py", line 1928, in save_form_data
+    getattr(instance, self.attname).set(data)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1130, in set
+    self.add(*new_objs, through_defaults=through_defaults)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1048, in add
+    self._add_items(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1313, in _add_items
+    signals.m2m_changed.send(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 176, in send
+    return [
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\signals.py", line 34, in notify_subscribers
+    msg.send()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Python3.10\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Python3.10\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Python3.10\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
+2023-11-08 14:18:32,798 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /main/news/create/ HTTP/1.1" 500 190779
+2023-11-08 14:19:39,013 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'smtplib.SMTPAuthenticationError'>, SMTPAuthenticationError(535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED'), <traceback object at 0x00000216E689C740>) |Internal Server Error: /main/news/create/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\views.py", line 89, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 135, in form_valid
+    self.object = form.save()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 549, in save
+    self._save_m2m()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 530, in _save_m2m
+    f.save_form_data(self.instance, cleaned_data[f.name])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related.py", line 1928, in save_form_data
+    getattr(instance, self.attname).set(data)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1130, in set
+    self.add(*new_objs, through_defaults=through_defaults)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1048, in add
+    self._add_items(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1313, in _add_items
+    signals.m2m_changed.send(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 176, in send
+    return [
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\signals.py", line 34, in notify_subscribers
+    msg.send()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Python3.10\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Python3.10\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Python3.10\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
+2023-11-08 14:19:41,375 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /main/news/create/ HTTP/1.1" 500 190780
+2023-11-08 14:21:00,400 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'smtplib.SMTPAuthenticationError'>, SMTPAuthenticationError(535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED'), <traceback object at 0x000001A1BC785380>) |Internal Server Error: /main/news/create/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\views.py", line 89, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 135, in form_valid
+    self.object = form.save()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 549, in save
+    self._save_m2m()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 530, in _save_m2m
+    f.save_form_data(self.instance, cleaned_data[f.name])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related.py", line 1928, in save_form_data
+    getattr(instance, self.attname).set(data)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1130, in set
+    self.add(*new_objs, through_defaults=through_defaults)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1048, in add
+    self._add_items(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1313, in _add_items
+    signals.m2m_changed.send(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 176, in send
+    return [
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\signals.py", line 34, in notify_subscribers
+    msg.send()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Python3.10\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Python3.10\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Python3.10\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
+2023-11-08 14:21:02,865 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /main/news/create/ HTTP/1.1" 500 190780
+2023-11-08 14:22:58,932 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'smtplib.SMTPAuthenticationError'>, SMTPAuthenticationError(535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED'), <traceback object at 0x0000027733277280>) |Internal Server Error: /main/news/create/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\views.py", line 89, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 135, in form_valid
+    self.object = form.save()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 549, in save
+    self._save_m2m()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 530, in _save_m2m
+    f.save_form_data(self.instance, cleaned_data[f.name])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related.py", line 1928, in save_form_data
+    getattr(instance, self.attname).set(data)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1130, in set
+    self.add(*new_objs, through_defaults=through_defaults)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1048, in add
+    self._add_items(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1313, in _add_items
+    signals.m2m_changed.send(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 176, in send
+    return [
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\signals.py", line 34, in notify_subscribers
+    msg.send()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Python3.10\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Python3.10\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Python3.10\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
+2023-11-08 14:23:01,378 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /main/news/create/ HTTP/1.1" 500 190779
+2023-11-08 14:23:51,982 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'smtplib.SMTPAuthenticationError'>, SMTPAuthenticationError(535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED'), <traceback object at 0x00000277332440C0>) |Internal Server Error: /main/news/create/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\views.py", line 89, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 135, in form_valid
+    self.object = form.save()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 549, in save
+    self._save_m2m()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\forms\models.py", line 530, in _save_m2m
+    f.save_form_data(self.instance, cleaned_data[f.name])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related.py", line 1928, in save_form_data
+    getattr(instance, self.attname).set(data)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1130, in set
+    self.add(*new_objs, through_defaults=through_defaults)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1048, in add
+    self._add_items(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1313, in _add_items
+    signals.m2m_changed.send(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 176, in send
+    return [
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\signals.py", line 34, in notify_subscribers
+    msg.send()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Python3.10\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Python3.10\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Python3.10\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
+2023-11-08 14:23:54,258 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /main/news/create/ HTTP/1.1" 500 190779
+2023-11-08 14:32:42,663 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:32:44,910 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:32:58,111 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:32:58,111 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:00,421 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:02,703 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:17,417 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:17,424 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:19,682 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:22,014 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:24,903 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:28,973 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:32,407 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:34,636 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:36,358 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:39,122 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:41,334 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:43,613 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:45,661 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:46,572 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:48,091 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:50,310 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:50,327 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:33:57,028 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:06,019 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:06,019 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:08,568 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:10,874 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:17,479 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:17,479 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:19,722 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:21,967 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:30,560 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:30,560 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:32,808 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:35,076 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:40,097 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:40,103 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:42,347 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:44,597 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:52,699 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:52,704 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:55,021 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 14:34:57,276 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-08 15:13:30,763 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'smtplib.SMTPAuthenticationError'>, SMTPAuthenticationError(535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED'), <traceback object at 0x000001B90B354CC0>) |Internal Server Error: /accounts/password/reset/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\allauth\decorators.py", line 20, in wrap
+    resp = function(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\allauth\account\views.py", line 105, in post
+    response = self.form_valid(form)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\allauth\account\views.py", line 698, in form_valid
+    form.save(self.request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\allauth\account\forms.py", line 539, in save
+    self._send_unknown_account_mail(request, email)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\allauth\account\forms.py", line 552, in _send_unknown_account_mail
+    get_adapter(request).send_mail("account/email/unknown_account", email, context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\allauth\account\adapter.py", line 140, in send_mail
+    msg.send()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Python3.10\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Python3.10\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Python3.10\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
+2023-11-08 15:13:33,089 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /accounts/password/reset/ HTTP/1.1" 500 158216
+2023-11-08 15:17:18,800 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'smtplib.SMTPAuthenticationError'>, SMTPAuthenticationError(535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED'), <traceback object at 0x0000023F4EC02D80>) |Internal Server Error: /main/categories/subscribe/category/1
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\views.py", line 225, in add_subscribtion
+    msg.send()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Python3.10\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Python3.10\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Python3.10\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
+2023-11-08 15:17:21,064 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /main/categories/subscribe/category/1 HTTP/1.1" 500 126902
+2023-11-08 15:17:59,986 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'smtplib.SMTPAuthenticationError'>, SMTPAuthenticationError(535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED'), <traceback object at 0x000001FEF6C781C0>) |Internal Server Error: /main/categories/subscribe/category/2
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\views.py", line 225, in add_subscribtion
+    msg.send()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Python3.10\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Python3.10\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Python3.10\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
+2023-11-08 15:18:02,373 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /main/categories/subscribe/category/2 HTTP/1.1" 500 126899
+2023-11-08 15:21:10,811 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'smtplib.SMTPAuthenticationError'>, SMTPAuthenticationError(535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED'), <traceback object at 0x000001D128548740>) |Internal Server Error: /main/categories/subscribe/category/5
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\views.py", line 225, in add_subscribtion
+    msg.send()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Python3.10\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Python3.10\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "C:\Python3.10\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
+2023-11-08 15:21:13,408 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /main/categories/subscribe/category/5 HTTP/1.1" 500 126887

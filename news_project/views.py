@@ -174,7 +174,7 @@ class NewsDetail(FormView, DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['site'] = Site.objects.get_current().domain
+        context['site'] = Site.objects.get_current()
         context['comment'] = Comment
         return context
 
@@ -198,7 +198,7 @@ class CategoryDetail(PermissionRequiredMixin, ListView):
 
 
 @login_required
-def add_subscribtion(request, pk):
+def add_subscription(request, pk):
     user = request.user
     catgr = Category.objects.get(id=pk)
     is_subscribed = CategorySubscribers.objects.filter(linked_user_id=user.id, linked_category_id=catgr.id)
@@ -248,7 +248,7 @@ def add_subscribtion(request, pk):
 
 
 @login_required
-def remove_subscribtion(request, pk):
+def remove_subscription(request, pk):
     user = request.user
     catgr = Category.objects.get(id=pk)
     if CategorySubscribers.objects.filter(linked_user_id=user.id):

@@ -15,26 +15,24 @@ import environs
 from pathlib import Path
 import logging
 
-env = environs.Env()
-
-env.read_env()
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+env = environs.Env()
+
+env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.str('NEWSPAPER_SECRET_KEY')
+SECRET_KEY = env.str("NEWSPAPER_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG', default=False)
 
-ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -156,11 +154,11 @@ WSGI_APPLICATION = 'NewsPaper.wsgi.application'
 
 DATABASES = {
 
-    "default": env.dj_db_url("DATABASE_URL")
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
+    # "default": env.dj_db_url("DATABASE_URL")
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
 
 CACHES = {
@@ -284,7 +282,7 @@ LOGGING = {
             'formatter': 'mail_format',
         },
     },
-    'loggers':{
+    'loggers': {
         'django': {
             'handlers': ['console_i', 'general_log'],
             'level': 'DEBUG',
@@ -381,7 +379,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = env.str('EMAIL_HOST')
 EMAIL_PORT = 465
 EMAIL_HOST_USER = env.str('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = env.str('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_PASSWORD = env.str('EMAIL_PASSWORD')
 EMAIL_USE_SSL = True
 
 ADMINS = [
@@ -403,17 +401,3 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 
 INTERNAL_IPS = '127.0.0.1'
-
-CSRF_COOKIE_SECURE = env.bool('CSRF_COOKIE_SECURE', default=True)
-
-SESSION_COOKIE_SECURE = env.bool('SESSION_COOKIE_SECURE', default=True)
-
-SECURE_SSL_REDIRECT = env.bool('SECURE_SSL_REDIRECT', default=True)
-
-SECURE_HSTS_SECONDS = env.int('SECURE_HSTS_SECONDS', default=2592000)
-
-SECURE_HSTS_INCLUDE_SUBDOMAINS = env.bool("SECURE_HSTS_INCLUDE_SUBDOMAINS", default=True)
-
-SECURE_HSTS_PRELOAD = env.bool("SECURE_HSTS_PRELOAD", default=True)
-
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")

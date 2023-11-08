@@ -94,5 +94,3 @@ class Comment(models.Model):
 class CategorySubscribers(models.Model):
     linked_user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
     linked_category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True)
-
-# Create your models here.

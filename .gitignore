@@ -1,9 +1,9 @@
-venv/
+.venv/
 __pycache__/
 .idea/
 virtualenv/
-.env
 cache_files/
+.env
 db.sqlite3
 mydata.json
 mydata.xml
