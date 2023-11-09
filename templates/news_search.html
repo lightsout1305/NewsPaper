@@ -6,7 +6,6 @@
 {% load tz %}
 {% load i18n %}
 
-
 {% block content %}
     <h1>{% trans "Main news" %}</h1>
     <h3>{% trans "Number of news" %} - {{ news|length }}</h3>
@@ -16,20 +15,22 @@
     </form>
     <hr>
     {% if news %}
-        <table>
-            <tr>
-                <td><h5>{% trans "Title" %}</h5></td>
-                <td><h5>{% trans "Release date" %}</h5></td>
-                <td><h5>{% trans "Text" %}</h5></td>
-            </tr>
-            {% for onenews in news %}
-            <tr>
-                <td align="left"><a href="{{ onenews.id }}" class="btn-sm">{{ onenews.title|censor }}</a> </td>
-                <td>{{ onenews.register_date|date:'M d Y' }}</td>
-                <td align="left">{{ onenews.content|truncatechars:20|censor }}</td>
-            </tr>
-            {% endfor %}
-        </table>
+        {% for onenews in news %}
+            <div class="news">
+                <a href="{{ onenews.id }}" class="news-title">{{ onenews.title|censor }}</a>
+                {% for cat in onenews.categories.all %}
+                    <p class="news-category">&middot; {{ cat }}</p>
+                {% endfor %}
+                <p class="news-date">{{ onenews.register_date|date:'M d Y' }}</p>
+                <p class="news-content">{{ onenews.content|truncatechars:100|censor }}</p>
+                <p class="news-author">&middot; {{ onenews.author }}</p>
+                {% if onenews.choice == 'ARTL' %}
+                    <p class="news-type">{% trans "Article" %}</p>
+                {% else %}
+                    <p class="news-type">{% trans "News" %}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
     {% else %}
     <h2>{% trans "No news yet..." %}</h2>
     {% endif %}

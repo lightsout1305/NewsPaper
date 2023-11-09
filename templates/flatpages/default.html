@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% load i18n %}
 {% load tz %}
-{% load cache %}
+{% load static %}
 {% load crispy_forms_filters %}
 <html lang="en">
     <head>
@@ -10,20 +10,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+        <link rel="icon" href="{% static 'icons/newspaper-favicon-color.svg' %}">
         <title>News Portal</title>
-
-        {% load static %}
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
         <style>
-            body {background-color: {% if current_time.hour >= 19 or current_time.hour <= 7 %} darkgray {% else %} white {% endif %};}
+            body {background-color: {% if current_time.hour >= 19 or current_time.hour <= 7 %} #2c3034 {% else %} #F5F5F5 {% endif %};}
         </style>
     </head>
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <div class="container">
-                <a class="navbar-brand" href="/main/">{% trans "News" %}</a>
+                <a class="news-logo" href="/main/"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarResponsive"
                         aria-controls="navbarResponsive" aria-expanded="false"
@@ -55,7 +54,7 @@
                             <label>
                                 <select name="language" class="form-select-sm">
                                     {% get_current_language as LANGUAGE_CODE %}
-                                    {% cache 600 welcome LANGUAGE_CODE %}
+{#                                    {% cache 600 welcome LANGUAGE_CODE %}#}
                                     {% get_available_languages as LANGUAGES %} <!-- получаем языки -->
                                     {% get_language_info_list for LANGUAGES as languages %} <!-- Помещаем их в список languages -->
                                     {% for language in languages %} <!-- Итерируясь по списку, выводим их название на языке пользователя и код -->
@@ -66,7 +65,7 @@
                                         {{ language.name_local }} - {{ language.code }}
                                         </option>
                                     {% endfor %}
-                                    {% endcache %}
+{#                                    {% endcache %}#}
                                 </select>
                             </label>
                             <input type="submit" value="{% trans 'Set' %}" class="btn btn-outline-light">
@@ -86,11 +85,15 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="timezone">
             {% get_current_timezone as TIME_ZONE %}
             <form style="margin-left: 120px" action="{% url 'set_timezone' %}" method="post">
                 {% csrf_token %}
-                <label for="timezone">Time zone:</label>
+                {% if current_time.hour >= 19 or current_time.hour <= 7 %}
+                    <label for="timezone" style="color: white">Time zone:</label>
+                {% else %}
+                    <label for="timezone">Time zone:</label>
+                {% endif %}
                 <label>
                     <select name="timezone">
                         {% for tz in timezones %}
@@ -98,10 +101,19 @@
                         {% endfor %}
                     </select>
                 </label>
-                <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-dark">
+                {% if current_time.hour >= 19 or current_time.hour <= 7 %}
+                    <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-light">
+                {% else %}
+                    <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-dark">
+                {% endif %}
             </form>
-            <h6 style="margin-left: 120px">{{ TIME_ZONE }}</h6>
-            <h6 style="margin-left: 120px">{{ current_time|timezone:TIME_ZONE }}</h6>
+            {% if current_time.hour >= 19 or current_time.hour <= 7 %}
+                <h6 style="margin-left: 120px; color: white">{{ TIME_ZONE }}</h6>
+                <h6 style="margin-left: 120px; color: white">{{ current_time|timezone:TIME_ZONE }}</h6>
+            {% else %}
+                <h6 style="margin-left: 120px">{{ TIME_ZONE }}</h6>
+                <h6 style="margin-left: 120px">{{ current_time|timezone:TIME_ZONE }}</h6>
+            {% endif %}
         </div>
     </body>
 </html>

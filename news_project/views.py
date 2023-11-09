@@ -10,7 +10,7 @@ from django.shortcuts import redirect, render
 from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.core.mail import EmailMultiAlternatives
-from django.core.cache import cache
+# from django.core.cache import cache
 from django.template.loader import render_to_string
 
 from .models import Post, Category, CategorySubscribers, Author, Comment
@@ -51,10 +51,10 @@ def set_timezone(request):
 
 class NewsList(ListView):
     model = Post
-    ordering = 'register_date'
+    ordering = '-register_date'
     template_name = 'news.html'
     context_object_name = 'news'
-    paginate_by = 10
+    paginate_by = 5
 
 
 class NewsSearch(ListView):
@@ -62,7 +62,7 @@ class NewsSearch(ListView):
     ordering = 'register_date'
     template_name = 'news_search.html'
     context_object_name = 'news'
-    paginate_by = 10
+    paginate_by = 5
 
     def get_queryset(self):
         queryset = super().get_queryset()
@@ -149,13 +149,13 @@ class NewsDetail(FormView, DetailView):
     template_name = 'detail.html'
     context_object_name = 'onenews'
 
-    def get_object(self, *args, **kwargs):
-        obj = cache.get(f'news_detail-{self.kwargs["pk"]}', None)
-
-        if not obj:
-            obj = super().get_object(queryset=self.queryset)
-            cache.set(f'news_detail-{self.kwargs["pk"]}', obj)
-        return obj
+    # def get_object(self, *args, **kwargs):
+    #     obj = cache.get(f'news_detail-{self.kwargs["pk"]}', None)
+    #
+    #     if not obj:
+    #         obj = super().get_object(queryset=self.queryset)
+    #         cache.set(f'news_detail-{self.kwargs["pk"]}', obj)
+    #     return obj
 
     def post(self, request, *args, **kwargs):
         self.object = self.get_object()

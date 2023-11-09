@@ -2461,6 +2461,9 @@ textarea.form-control-lg {
   padding-left: 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
+  position: relative;
+  bottom: 10%;
+  left: 150%
 }
 
 .form-check {
@@ -4080,6 +4083,9 @@ textarea.form-control-lg {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  position: absolute;
+  bottom: 1%;
+  right: 32%;
 }
 
 .navbar-toggler {
@@ -11285,4 +11291,70 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+.timezone {
+  position: relative;
+  top: 50%;
+}
+
+.news {
+  background-color: #FFFFFF;
+  text-align: left;
+  height: 150px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  padding: 15px 15px 15px 15px;
+  box-shadow: -20px -20px 40px 0px rgba(0, 0, 0, 0.07), 20px 20px 40px 0px rgba(0, 0, 0, 0.07);
+}
+
+.news-title {
+  font-family: "Work Sans Regular", sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.news-logo {
+  width: 70px;
+  height: 50px;
+  background: url("../logos/newspaper-favicon-white.svg");
+}
+
+.news-date {
+  display: inline-block;
+  float: right;
+}
+
+.news-content {
+  font-family: "Hind Siliguri Regular", sans-serif;
+  font-size: 20px;
+  color: #6c757d;
+}
+
+.news-author {
+  font-family: "Hind Siliguri Regular", sans-serif;
+  font-size: 18px;
+  color: #6c757d;
+  display: inline-block;
+  padding: 0 0 0 0;
+}
+
+.news-type {
+  display: inline-block;
+  float: right;
+  padding: 0 0 0 0;
+  font-family: "Hind Siliguri Regular", sans-serif;
+  font-size: 15px;
+  color: #6c757d;
+}
+
+.news-category {
+  display: inline-block;
+  font-family: "Hind Siliguri Regular", sans-serif;
+  font-size: 15px;
+  color: #6c757d;
+  margin: 0 0 0 0;
 }

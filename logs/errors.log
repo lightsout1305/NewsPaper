@@ -2441,3 +2441,175 @@ Traceback (most recent call last):
     raise SMTPAuthenticationError(code, resp)
 smtplib.SMTPAuthenticationError: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')
 2023-11-08 15:21:13,408 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"POST /main/categories/subscribe/category/5 HTTP/1.1" 500 126887
+2023-11-09 12:41:07,337 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 13: 'static'. Did you forget to register or load this tag?"), <traceback object at 0x000002A803D7D380>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'static'. Did you forget to register or load this tag?
+2023-11-09 12:41:09,322 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 223082
+2023-11-09 12:42:44,139 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-09 12:42:58,000 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-09 12:43:06,493 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-09 12:43:10,445 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-09 12:43:18,037 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-09 12:43:30,873 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-10 00:41:39,738 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'TypeError'>, TypeError("'ManyRelatedManager' object is not iterable"), <traceback object at 0x0000022516B685C0>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2023-11-10 00:41:41,022 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'TypeError'>, TypeError("'ManyRelatedManager' object is not iterable"), <traceback object at 0x0000022516823180>) |Internal Server Error: /main/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2023-11-10 00:41:42,819 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 246236
