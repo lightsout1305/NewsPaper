@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 01:23+0300\n"
+"POT-Creation-Date: 2023-11-11 19:57+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: .\news_project\filters.py:11
+msgid "Type title"
+msgstr "Entrez le titre"
+
+#: .\news_project\filters.py:12
+msgid "News categories"
+msgstr "Choisissez des catégories"
+
+#: .\news_project\filters.py:13
+msgid "Select date"
+msgstr "Date de publication"
+
 #: .\templates\account\email\email_confirmation_message.html:7
 msgid "Confirmation"
-msgstr ""
+msgstr "Confirmation"
 
 #: .\templates\account\email\email_confirmation_message.html:11
 msgid "Thank you for the sign up"
@@ -40,7 +52,8 @@ msgstr "le lien"
 msgid "Sincerely yours"
 msgstr "Sincèrement vôtre"
 
-#: .\templates\account\login.html:7 .\templates\account\login.html:13
+#: .\templates\account\login.html:7 .\templates\account\login.html:10
+#: .\templates\account\login.html:13
 msgid "Log In"
 msgstr "Connectez-vous"
 
@@ -49,7 +62,7 @@ msgid "Forgot password?"
 msgstr "Le mot de passe oublié?"
 
 #: .\templates\account\login.html:16 .\templates\account\signup.html:7
-#: .\templates\account\signup.html:13
+#: .\templates\account\signup.html:10 .\templates\account\signup.html:13
 msgid "Sign Up"
 msgstr "Enregistrez-vous"
 
@@ -98,11 +111,11 @@ msgstr ""
 
 #: .\templates\account\password_reset_from_key.html:17
 msgid "Change password"
-msgstr ""
+msgstr "Changer le mot de passe"
 
 #: .\templates\account\password_reset_from_key_done.html:8
 msgid "Your password is now changed."
-msgstr ""
+msgstr "Votre mot de passe vient de changer"
 
 #: .\templates\account\signup.html:15
 msgid "Sign Up via Google"
@@ -122,7 +135,8 @@ msgstr "Supprimer"
 msgid "from"
 msgstr "de"
 
-#: .\templates\article_edit.html:7
+#: .\templates\article_edit.html:7 .\templates\news.html:33
+#: .\templates\news_search.html:53
 msgid "Article"
 msgstr "Article"
 
@@ -174,57 +188,46 @@ msgstr "Pour commenter, veuillez"
 msgid "log in"
 msgstr "vous enregistrer"
 
-#: .\templates\flatpages\default.html:26 .\templates\news.html:8
-#: .\templates\news_edit.html:7
-msgid "News"
-msgstr "Actualités"
-
-#: .\templates\flatpages\default.html:36
+#: .\templates\flatpages\default.html:35
 msgid "Search content"
 msgstr "Chercher"
 
-#: .\templates\flatpages\default.html:39 .\templates\protect\index.html:12
+#: .\templates\flatpages\default.html:38 .\templates\protect\index.html:12
 msgid "Become author"
 msgstr "Devenir auteur"
 
-#: .\templates\flatpages\default.html:42
+#: .\templates\flatpages\default.html:41
 msgid "Create your articles"
 msgstr "Créez vos articles"
 
-#: .\templates\flatpages\default.html:45
+#: .\templates\flatpages\default.html:44
 msgid "Create your news"
 msgstr "Créez vos actualités"
 
-#: .\templates\flatpages\default.html:48
+#: .\templates\flatpages\default.html:47
 msgid "Subcribe to Categories"
 msgstr "Abonnez-vous aux Categories"
 
-#: .\templates\flatpages\default.html:72 .\templates\flatpages\default.html:101
+#: .\templates\flatpages\default.html:71 .\templates\flatpages\default.html:105
+#: .\templates\flatpages\default.html:107
 msgid "Set"
 msgstr "Choisir"
 
-#: .\templates\news.html:12 .\templates\news_search.html:11
+#: .\templates\flatpages\default.html:93 .\templates\flatpages\default.html:95
+msgid "Time zone:"
+msgstr "Fuseau horaire:"
+
+#: .\templates\news.html:9 .\templates\news.html:35
+#: .\templates\news_edit.html:7 .\templates\news_search.html:55
+msgid "News"
+msgstr "Actualités"
+
+#: .\templates\news.html:14 .\templates\news.html:16
+#: .\templates\news_search.html:11 .\templates\news_search.html:13
 msgid "Main news"
 msgstr "Actualités récentes"
 
-#: .\templates\news.html:13 .\templates\news_search.html:12
-msgid "Number of news"
-msgstr "Nombre d'actualités"
-
-#: .\templates\news.html:18 .\templates\news_project\notification.html:11
-#: .\templates\news_search.html:21
-msgid "Title"
-msgstr "Intitulé"
-
-#: .\templates\news.html:19 .\templates\news_search.html:22
-msgid "Release date"
-msgstr "Date de publication"
-
-#: .\templates\news.html:20 .\templates\news_search.html:23
-msgid "Text"
-msgstr "Contenu"
-
-#: .\templates\news.html:31 .\templates\news_search.html:34
+#: .\templates\news.html:40 .\templates\news_search.html:60
 msgid "No news yet..."
 msgstr "Pas d'actualités..."
 
@@ -245,6 +248,10 @@ msgstr "Bonjour"
 #: .\templates\news_project\notification.html:10
 msgid "A new post in your favorite category is here!"
 msgstr "Voilà le poste à votre categorie favorie!"
+
+#: .\templates\news_project\notification.html:11
+msgid "Title"
+msgstr "Intitulé"
 
 #: .\templates\news_project\notification.html:12
 msgid "Summary:"
@@ -291,7 +298,7 @@ msgstr "Intitulé"
 msgid "Summary"
 msgstr "Sommaire"
 
-#: .\templates\news_search.html:15
+#: .\templates\news_search.html:29 .\templates\news_search.html:38
 msgid "Search"
 msgstr "Chercher"
 
@@ -319,57 +326,8 @@ msgstr "Modifier le profil"
 msgid "Quit"
 msgstr "Quitter"
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:7
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:221
-msgid "The install worked successfully! Congratulations!"
-msgstr ""
+#~ msgid "Number of news"
+#~ msgstr "Nombre d'actualités"
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:207
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:207
-#, python-format
-msgid ""
-"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
-"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:222
-#, python-format
-msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
-"\">DEBUG=True</a> is in your settings file and you have not configured any "
-"URLs."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:230
-msgid "Django Documentation"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:231
-msgid "Topics, references, &amp; how-to’s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:239
-msgid "Tutorial: A Polling App"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:240
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:240
-msgid "Get started with Django"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:248
-msgid "Django Community"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:249
-msgid "Connect, get help, or contribute"
-msgstr ""
+#~ msgid "Text"
+#~ msgstr "Contenu"

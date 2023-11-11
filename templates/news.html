@@ -4,6 +4,7 @@
 {% load custom_tags %}
 {% load i18n %}
 {% load tz %}
+{% load static %}
 
 {% block title %}
 {% trans "News" %}
@@ -27,6 +28,9 @@
                     <p class="news-category">&middot; {{ cat }}</p>
                 {% endfor %}
                 <p class="news-date">{{ onenews.register_date|date:'M d Y' }}</p>
+                {% if onenews.image %}
+                    <img class="news-image" src="{{ onenews.image.url }}" alt="img">
+                {% endif %}
                 <p class="news-content">{{ onenews.content|truncatechars:100|censor }}</p>
                 <p class="news-author">&middot; {{ onenews.author }}</p>
                 {% if onenews.choice == 'ARTL' %}
@@ -37,7 +41,11 @@
             </div>
         {% endfor %}
     {% else %}
-    <h2>{% trans "No news yet..." %}</h2>
+        {% if current_time.hour >= 19 or current_time.hour <= 7 %}
+            <h2 style="color: white">{% trans "No news yet..." %}</h2>
+        {% else %}
+            <h2>{% trans "No news yet..." %}</h2>
+        {% endif %}
     {% endif %}
 
     {% if page_obj.has_previous %}

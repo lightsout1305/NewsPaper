@@ -90,9 +90,9 @@
             <form style="margin-left: 120px" action="{% url 'set_timezone' %}" method="post">
                 {% csrf_token %}
                 {% if current_time.hour >= 19 or current_time.hour <= 7 %}
-                    <label for="timezone" style="color: white">Time zone:</label>
+                    <label for="timezone" style="color: white">{% trans "Time zone:" %}</label>
                 {% else %}
-                    <label for="timezone">Time zone:</label>
+                    <label for="timezone">{% trans "Time zone:" %}</label>
                 {% endif %}
                 <label>
                     <select name="timezone">

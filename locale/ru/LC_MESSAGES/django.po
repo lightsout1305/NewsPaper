@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 01:23+0300\n"
+"POT-Creation-Date: 2023-11-11 19:56+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,18 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\news_project\filters.py:11
+msgid "Type title"
+msgstr "Введите заголовок"
+
+#: .\news_project\filters.py:12
+msgid "News categories"
+msgstr "Категории новостей"
+
+#: .\news_project\filters.py:13
+msgid "Select date"
+msgstr "Выберите дату"
 
 #: .\templates\account\email\email_confirmation_message.html:7
 msgid "Confirmation"
@@ -42,7 +54,8 @@ msgstr "по ссылке"
 msgid "Sincerely yours"
 msgstr "С уважением"
 
-#: .\templates\account\login.html:7 .\templates\account\login.html:13
+#: .\templates\account\login.html:7 .\templates\account\login.html:10
+#: .\templates\account\login.html:13
 msgid "Log In"
 msgstr "Войти"
 
@@ -51,7 +64,7 @@ msgid "Forgot password?"
 msgstr "Забыли пароль?"
 
 #: .\templates\account\login.html:16 .\templates\account\signup.html:7
-#: .\templates\account\signup.html:13
+#: .\templates\account\signup.html:10 .\templates\account\signup.html:13
 msgid "Sign Up"
 msgstr "Регистрация"
 
@@ -76,17 +89,19 @@ msgid ""
 "spam folder. Otherwise\n"
 "    contact us if you do not receive it in a few minutes."
 msgstr ""
+"Мы отправили вам письмо на E-mail. Если его нет, то проверьте ящик со "
+"спамом. В противном случае свяжитесь с нами"
 
 #: .\templates\account\password_reset_from_key.html:4
 #: .\templates\account\password_reset_from_key.html:7
 #: .\templates\account\password_reset_from_key_done.html:4
 #: .\templates\account\password_reset_from_key_done.html:7
 msgid "Change Password"
-msgstr ""
+msgstr "Изменить пароль"
 
 #: .\templates\account\password_reset_from_key.html:7
 msgid "Bad Token"
-msgstr ""
+msgstr "Неверный токен"
 
 #: .\templates\account\password_reset_from_key.html:11
 #, python-format
@@ -95,14 +110,17 @@ msgid ""
 "used. Please request a <a\n"
 "        href=\"%(passwd_reset_url)s\">new password reset</a>."
 msgstr ""
+"Ссылка со сбросом пароля недействительна. Возможно, пароль был уже сменен по "
+"ней. Пожалуйста, попробуйте <a href=\"%(passwd_reset_url)s\">сбросить "
+"пароль</a> заново."
 
 #: .\templates\account\password_reset_from_key.html:17
 msgid "Change password"
-msgstr ""
+msgstr "Изменить пароль"
 
 #: .\templates\account\password_reset_from_key_done.html:8
 msgid "Your password is now changed."
-msgstr ""
+msgstr "Ваш пароль изменен"
 
 #: .\templates\account\signup.html:15
 msgid "Sign Up via Google"
@@ -122,7 +140,8 @@ msgstr "Удалить"
 msgid "from"
 msgstr "от"
 
-#: .\templates\article_edit.html:7
+#: .\templates\article_edit.html:7 .\templates\news.html:33
+#: .\templates\news_search.html:53
 msgid "Article"
 msgstr "Статья"
 
@@ -174,57 +193,46 @@ msgstr "Чтобы добавить комментарий, пожалуйста
 msgid "log in"
 msgstr "авторизуйтесь"
 
-#: .\templates\flatpages\default.html:26 .\templates\news.html:8
-#: .\templates\news_edit.html:7
-msgid "News"
-msgstr "Новость"
-
-#: .\templates\flatpages\default.html:36
+#: .\templates\flatpages\default.html:35
 msgid "Search content"
 msgstr "Поиск"
 
-#: .\templates\flatpages\default.html:39 .\templates\protect\index.html:12
+#: .\templates\flatpages\default.html:38 .\templates\protect\index.html:12
 msgid "Become author"
 msgstr "Стать автором"
 
-#: .\templates\flatpages\default.html:42
+#: .\templates\flatpages\default.html:41
 msgid "Create your articles"
 msgstr "Создать статью"
 
-#: .\templates\flatpages\default.html:45
+#: .\templates\flatpages\default.html:44
 msgid "Create your news"
 msgstr "Создать новость"
 
-#: .\templates\flatpages\default.html:48
+#: .\templates\flatpages\default.html:47
 msgid "Subcribe to Categories"
 msgstr "Подписаться на категории"
 
-#: .\templates\flatpages\default.html:72 .\templates\flatpages\default.html:101
+#: .\templates\flatpages\default.html:71 .\templates\flatpages\default.html:105
+#: .\templates\flatpages\default.html:107
 msgid "Set"
 msgstr "Выбрать"
 
-#: .\templates\news.html:12 .\templates\news_search.html:11
+#: .\templates\flatpages\default.html:93 .\templates\flatpages\default.html:95
+msgid "Time zone:"
+msgstr "Часовой пояс:"
+
+#: .\templates\news.html:9 .\templates\news.html:35
+#: .\templates\news_edit.html:7 .\templates\news_search.html:55
+msgid "News"
+msgstr "Новость"
+
+#: .\templates\news.html:14 .\templates\news.html:16
+#: .\templates\news_search.html:11 .\templates\news_search.html:13
 msgid "Main news"
 msgstr "Главные новости"
 
-#: .\templates\news.html:13 .\templates\news_search.html:12
-msgid "Number of news"
-msgstr "Количество новостей"
-
-#: .\templates\news.html:18 .\templates\news_project\notification.html:11
-#: .\templates\news_search.html:21
-msgid "Title"
-msgstr "Заголовок"
-
-#: .\templates\news.html:19 .\templates\news_search.html:22
-msgid "Release date"
-msgstr "Дата публикации"
-
-#: .\templates\news.html:20 .\templates\news_search.html:23
-msgid "Text"
-msgstr "Текст"
-
-#: .\templates\news.html:31 .\templates\news_search.html:34
+#: .\templates\news.html:40 .\templates\news_search.html:60
 msgid "No news yet..."
 msgstr "Пока новостей нет..."
 
@@ -245,6 +253,10 @@ msgstr "Приветствуем"
 #: .\templates\news_project\notification.html:10
 msgid "A new post in your favorite category is here!"
 msgstr "Новый пост по вашей любимой категории уже здесь!"
+
+#: .\templates\news_project\notification.html:11
+msgid "Title"
+msgstr "Заголовок"
 
 #: .\templates\news_project\notification.html:12
 msgid "Summary:"
@@ -291,7 +303,7 @@ msgstr "Заголовок:"
 msgid "Summary"
 msgstr "Краткое содержание"
 
-#: .\templates\news_search.html:15
+#: .\templates\news_search.html:29 .\templates\news_search.html:38
 msgid "Search"
 msgstr "Поиск"
 
@@ -321,57 +333,8 @@ msgstr "Изменить профиль"
 msgid "Quit"
 msgstr "Выйти"
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:7
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:221
-msgid "The install worked successfully! Congratulations!"
-msgstr ""
+#~ msgid "Number of news"
+#~ msgstr "Количество новостей"
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:207
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:207
-#, python-format
-msgid ""
-"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
-"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:222
-#, python-format
-msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
-"\">DEBUG=True</a> is in your settings file and you have not configured any "
-"URLs."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:230
-msgid "Django Documentation"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:231
-msgid "Topics, references, &amp; how-to’s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:239
-msgid "Tutorial: A Polling App"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:240
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:240
-msgid "Get started with Django"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:248
-msgid "Django Community"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
-#: .\virtualenv\lib\python3.8\site-packages\django\views\templates\default_urlconf.html:249
-msgid "Connect, get help, or contribute"
-msgstr ""
+#~ msgid "Text"
+#~ msgstr "Текст"

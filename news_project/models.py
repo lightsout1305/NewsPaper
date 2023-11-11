@@ -47,6 +47,7 @@ class Post(models.Model):
     title = models.CharField(max_length=50)
     content = models.TextField()
     content_rating = models.SmallIntegerField(default=0)
+    image = models.ImageField(blank=True, null=True)
 
     def like(self):
         self.content_rating += 1

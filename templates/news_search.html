@@ -7,11 +7,42 @@
 {% load i18n %}
 
 {% block content %}
-    <h1>{% trans "Main news" %}</h1>
-    <h3>{% trans "Number of news" %} - {{ news|length }}</h3>
+    {% if current_time.hour >= 19 or current_time.hour <= 7 %}
+        <h1 style="color: white; float: left; margin-top: 30px">{% trans "Main news" %}</h1>
+    {% else %}
+        <h1 style="float: left; margin-top: 30px">{% trans "Main news" %}</h1>
+    {% endif %}
+    <br>
+    <br>
+    <br>
+    <br>
     <form action="" method="get">
         {{ filterset.form|crispy }}
-        <input type="submit" class="btn btn-outline-dark" value="{% trans "Search" %}">
+        {% if current_time.hour >= 19 or current_time.hour <= 7 %}
+            <script>
+                const labels = document.getElementsByClassName('form-label');
+                const textInput = document.getElementById('id_title');
+                textInput.setAttribute('placeholder', '{% trans "Type title" %}');
+                for (let i = 0; i < labels.length; i++) {
+                    const label = labels[i];
+                    label.style.color = 'white';
+                    label.style.float = 'left';
+                }
+            </script>
+            <input type="submit" class="btn btn-outline-light" value="{% trans "Search" %}">
+        {% else %}
+            <script>
+                const labels = document.getElementsByClassName('form-label');
+                const textInput = document.getElementById('id_title');
+                textInput.setAttribute('placeholder', '{% trans "Type title" %}');
+                for (let i = 0; i < labels.length; i++) {
+                    const label = labels[i];
+                    label.style.color = 'black';
+                    label.style.float = 'left';
+                }
+            </script>
+            <input type="submit" class="btn btn-outline-dark" value="{% trans "Search" %}">
+        {% endif %}
     </form>
     <hr>
     {% if news %}
@@ -32,7 +63,11 @@
             </div>
         {% endfor %}
     {% else %}
-    <h2>{% trans "No news yet..." %}</h2>
+        {% if current_time.hour >= 19 or current_time.hour <= 7 %}
+                <h2 style="color: white">{% trans "No news yet..." %}</h2>
+            {% else %}
+                <h2>{% trans "No news yet..." %}</h2>
+            {% endif %}
     {% endif %}
 
     {% if page_obj.has_previous %}

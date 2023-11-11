@@ -11301,7 +11301,7 @@ textarea.form-control-lg {
 .news {
   background-color: #FFFFFF;
   text-align: left;
-  height: 150px;
+  height: auto;
   width: auto;
   border-radius: 8px;
   margin-bottom: 2%;
@@ -11324,7 +11324,6 @@ textarea.form-control-lg {
 }
 
 .news-date {
-  display: inline-block;
   float: right;
 }
 
@@ -11357,4 +11356,12 @@ textarea.form-control-lg {
   font-size: 15px;
   color: #6c757d;
   margin: 0 0 0 0;
+}
+
+.news-image {
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px 15px 15px;
+  border-radius: 30px;
+  display: block;
 }
