@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-11 19:57+0300\n"
+"POT-Creation-Date: 2023-11-12 20:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\news_project\filters.py:11
+#: .\news_project\filters.py:10 .\templates\news_search.html:25
+#: .\templates\news_search.html:37
 msgid "Type title"
 msgstr "Entrez le titre"
 
-#: .\news_project\filters.py:12
+#: .\news_project\filters.py:11
 msgid "News categories"
 msgstr "Choisissez des catégories"
 
-#: .\news_project\filters.py:13
+#: .\news_project\filters.py:12
 msgid "Select date"
 msgstr "Date de publication"
 
@@ -89,6 +90,9 @@ msgid ""
 "spam folder. Otherwise\n"
 "    contact us if you do not receive it in a few minutes."
 msgstr ""
+"Nous venons de vous envoyer l'e-mail. Si vous ne l'avez pas pris, veuillez "
+"regarder votre dossier de spam. Faute de quoi, veuillez nous contacter si "
+"vous ne le recevez pas dans quelque minutes."
 
 #: .\templates\account\password_reset_from_key.html:4
 #: .\templates\account\password_reset_from_key.html:7
@@ -99,7 +103,7 @@ msgstr "Changer du mot de passe"
 
 #: .\templates\account\password_reset_from_key.html:7
 msgid "Bad Token"
-msgstr ""
+msgstr "Token mauvais"
 
 #: .\templates\account\password_reset_from_key.html:11
 #, python-format
@@ -107,7 +111,7 @@ msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a <a\n"
 "        href=\"%(passwd_reset_url)s\">new password reset</a>."
-msgstr ""
+msgstr "Le lien de réinitialisation de mot de passe était inval, il est probable qu'il ait déjà été utilisé. Veuillez demander une <a href=\"%(passwd_reset_url)s\"> nouvelle réinitialisation de mot de passe</a>."
 
 #: .\templates\account\password_reset_from_key.html:17
 msgid "Change password"
@@ -126,7 +130,7 @@ msgid "Delete the article"
 msgstr "Supprimer l'article"
 
 #: .\templates\article_delete.html:9 .\templates\article_delete.html:10
-#: .\templates\detail.html:33 .\templates\detail.html:41
+#: .\templates\detail.html:23 .\templates\detail.html:33
 #: .\templates\news_delete.html:9 .\templates\news_delete.html:10
 msgid "Delete"
 msgstr "Supprimer"
@@ -135,12 +139,13 @@ msgstr "Supprimer"
 msgid "from"
 msgstr "de"
 
-#: .\templates\article_edit.html:7 .\templates\news.html:33
-#: .\templates\news_search.html:53
+#: .\templates\article_edit.html:7 .\templates\news.html:37
+#: .\templates\news_search.html:59
 msgid "Article"
 msgstr "Article"
 
-#: .\templates\article_edit.html:11 .\templates\news_edit.html:11
+#: .\templates\article_edit.html:11 .\templates\detail.html:78
+#: .\templates\news_edit.html:11
 msgid "Save"
 msgstr "Sauvegarder"
 
@@ -164,27 +169,39 @@ msgstr "Choisissez la catégorie à vous désabonner"
 msgid "Unsubscribe from"
 msgstr "Désabonnez-vous de"
 
-#: .\templates\detail.html:30 .\templates\detail.html:38
+#: .\templates\detail.html:20 .\templates\detail.html:30
 msgid "Change"
 msgstr "Modifier"
 
-#: .\templates\detail.html:46
-msgid "Comments"
-msgstr "Commentaires"
+#: .\templates\detail.html:41
+msgid "Author"
+msgstr "Auteur"
 
-#: .\templates\detail.html:50
+#: .\templates\detail.html:43 .\templates\detail.html:60
 msgid "Rating"
 msgstr "Évaluation"
 
-#: .\templates\detail.html:66
+#: .\templates\detail.html:48 .\templates\detail.html:64
+msgid "Like"
+msgstr "J'aime"
+
+#: .\templates\detail.html:52 .\templates\detail.html:68
+msgid "Dislike"
+msgstr "Je n'aime pas"
+
+#: .\templates\detail.html:56
+msgid "Comments"
+msgstr "Commentaires"
+
+#: .\templates\detail.html:74
 msgid "Add a comment"
 msgstr "Commenter"
 
-#: .\templates\detail.html:73
+#: .\templates\detail.html:81
 msgid "To leave a comment, please"
 msgstr "Pour commenter, veuillez"
 
-#: .\templates\detail.html:73
+#: .\templates\detail.html:81
 msgid "log in"
 msgstr "vous enregistrer"
 
@@ -217,17 +234,18 @@ msgstr "Choisir"
 msgid "Time zone:"
 msgstr "Fuseau horaire:"
 
-#: .\templates\news.html:9 .\templates\news.html:35
-#: .\templates\news_edit.html:7 .\templates\news_search.html:55
+#: .\templates\news.html:10 .\templates\news.html:39
+#: .\templates\news_edit.html:7 .\templates\news_search.html:61
 msgid "News"
 msgstr "Actualités"
 
-#: .\templates\news.html:14 .\templates\news.html:16
+#: .\templates\news.html:15 .\templates\news.html:17
 #: .\templates\news_search.html:11 .\templates\news_search.html:13
 msgid "Main news"
 msgstr "Actualités récentes"
 
-#: .\templates\news.html:40 .\templates\news_search.html:60
+#: .\templates\news.html:45 .\templates\news.html:47
+#: .\templates\news_search.html:67 .\templates\news_search.html:69
 msgid "No news yet..."
 msgstr "Pas d'actualités..."
 
@@ -298,7 +316,7 @@ msgstr "Intitulé"
 msgid "Summary"
 msgstr "Sommaire"
 
-#: .\templates\news_search.html:29 .\templates\news_search.html:38
+#: .\templates\news_search.html:32 .\templates\news_search.html:44
 msgid "Search"
 msgstr "Chercher"
 

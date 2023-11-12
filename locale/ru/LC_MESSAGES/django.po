@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-11 19:56+0300\n"
+"POT-Creation-Date: 2023-11-12 20:19+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,16 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\news_project\filters.py:11
+#: .\news_project\filters.py:10 .\templates\news_search.html:25
+#: .\templates\news_search.html:37
 msgid "Type title"
 msgstr "Введите заголовок"
 
-#: .\news_project\filters.py:12
+#: .\news_project\filters.py:11
 msgid "News categories"
 msgstr "Категории новостей"
 
-#: .\news_project\filters.py:13
+#: .\news_project\filters.py:12
 msgid "Select date"
 msgstr "Выберите дату"
 
@@ -131,7 +132,7 @@ msgid "Delete the article"
 msgstr "Удалить статью"
 
 #: .\templates\article_delete.html:9 .\templates\article_delete.html:10
-#: .\templates\detail.html:33 .\templates\detail.html:41
+#: .\templates\detail.html:23 .\templates\detail.html:33
 #: .\templates\news_delete.html:9 .\templates\news_delete.html:10
 msgid "Delete"
 msgstr "Удалить"
@@ -140,12 +141,13 @@ msgstr "Удалить"
 msgid "from"
 msgstr "от"
 
-#: .\templates\article_edit.html:7 .\templates\news.html:33
-#: .\templates\news_search.html:53
+#: .\templates\article_edit.html:7 .\templates\news.html:37
+#: .\templates\news_search.html:59
 msgid "Article"
 msgstr "Статья"
 
-#: .\templates\article_edit.html:11 .\templates\news_edit.html:11
+#: .\templates\article_edit.html:11 .\templates\detail.html:78
+#: .\templates\news_edit.html:11
 msgid "Save"
 msgstr "Сохранить"
 
@@ -169,27 +171,39 @@ msgstr "Выбрать категорию для отписки"
 msgid "Unsubscribe from"
 msgstr "Отписаться от"
 
-#: .\templates\detail.html:30 .\templates\detail.html:38
+#: .\templates\detail.html:20 .\templates\detail.html:30
 msgid "Change"
 msgstr "Изменить"
 
-#: .\templates\detail.html:46
-msgid "Comments"
-msgstr "Комментарии"
+#: .\templates\detail.html:41
+msgid "Author"
+msgstr "Автор"
 
-#: .\templates\detail.html:50
+#: .\templates\detail.html:43 .\templates\detail.html:60
 msgid "Rating"
 msgstr "Рейтинг"
 
-#: .\templates\detail.html:66
+#: .\templates\detail.html:48 .\templates\detail.html:64
+msgid "Like"
+msgstr "Нравится"
+
+#: .\templates\detail.html:52 .\templates\detail.html:68
+msgid "Dislike"
+msgstr "Не нравится"
+
+#: .\templates\detail.html:56
+msgid "Comments"
+msgstr "Комментарии"
+
+#: .\templates\detail.html:74
 msgid "Add a comment"
 msgstr "Добавить комментарий"
 
-#: .\templates\detail.html:73
+#: .\templates\detail.html:81
 msgid "To leave a comment, please"
 msgstr "Чтобы добавить комментарий, пожалуйста,"
 
-#: .\templates\detail.html:73
+#: .\templates\detail.html:81
 msgid "log in"
 msgstr "авторизуйтесь"
 
@@ -222,17 +236,18 @@ msgstr "Выбрать"
 msgid "Time zone:"
 msgstr "Часовой пояс:"
 
-#: .\templates\news.html:9 .\templates\news.html:35
-#: .\templates\news_edit.html:7 .\templates\news_search.html:55
+#: .\templates\news.html:10 .\templates\news.html:39
+#: .\templates\news_edit.html:7 .\templates\news_search.html:61
 msgid "News"
 msgstr "Новость"
 
-#: .\templates\news.html:14 .\templates\news.html:16
+#: .\templates\news.html:15 .\templates\news.html:17
 #: .\templates\news_search.html:11 .\templates\news_search.html:13
 msgid "Main news"
 msgstr "Главные новости"
 
-#: .\templates\news.html:40 .\templates\news_search.html:60
+#: .\templates\news.html:45 .\templates\news.html:47
+#: .\templates\news_search.html:67 .\templates\news_search.html:69
 msgid "No news yet..."
 msgstr "Пока новостей нет..."
 
@@ -303,7 +318,7 @@ msgstr "Заголовок:"
 msgid "Summary"
 msgstr "Краткое содержание"
 
-#: .\templates\news_search.html:29 .\templates\news_search.html:38
+#: .\templates\news_search.html:32 .\templates\news_search.html:44
 msgid "Search"
 msgstr "Поиск"
 

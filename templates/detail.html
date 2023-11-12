@@ -4,72 +4,85 @@
 {% load crispy_forms_tags %}
 {% load i18n %}
 
-<h1>{{ onenews.title }}</h1>
+{% block title %}{{ onenews.title }}{% endblock %}
 
 {% block content %}
-<div class="article-entry">
-    <h3>{{ onenews.title }}</h3>
-    <p>Author: {{ onenews.author }}</p>
-    <p>Date: {{ onenews.register_date }} &middot;
-    Rating: {{ onenews.content_rating }}</p>
-    <h5>{{ onenews.content }}</h5>
-    {% if request.user.is_authenticated %}
-        <form style="margin-bottom: 5px" action="{% url 'add_content_like' onenews.pk %}">
-            {% csrf_token %}
-            <button class="btn btn-outline-success">Like</button>
-        </form>
-        <form action="{% url 'add_content_dislike' onenews.pk %}">
-            {% csrf_token %}
-            <button class="btn btn-outline-danger">Dislike</button>
-        </form>
-    {% endif %}
-<hr>
+<br>
+<div class="news">
+    <h3 class="news-title">{{ onenews.title }}</h3>
+    {% for cat in onenews.categories.all %}
+        <p class="news-category">&middot; {{ cat }}</p>
+    {% endfor %}
     {% if onenews.author.author_user == request.user %}
         {% if onenews.choice == 'NEWS' %}
-            <a href="/main/news/{{ onenews.id }}/edit/">
-                <button class="btn btn-outline-dark">{% trans "Change" %}</button>
-            </a> |
-            <a href="/main/news/{{ onenews.id }}/delete/">
-                <button class="btn btn-outline-dark">{% trans "Delete" %}</button>
-            </a>
+            <div style="display: inline-block; float: right">
+                <a style="text-decoration: none" href="/main/news/{{ onenews.id }}/edit/">
+                    <button class="btn btn-outline-dark">{% trans "Change" %}</button>
+                </a>
+                <a style="text-decoration: none" href="/main/news/{{ onenews.id }}/delete/">
+                    <button class="btn btn-outline-dark">{% trans "Delete" %}</button>
+                </a>
+            </div>
         {% endif %}
         {% if onenews.choice == 'ARTL' %}
-            <a href="/main/articles/{{ onenews.id }}/edit/">
-                <button class="btn btn-outline-dark">{% trans "Change" %}</button>
-            </a>
-            <a href="/main/articles/{{ onenews.id }}/delete/">
-                <button class="btn btn-outline-dark">{% trans "Delete" %}</button>
-            </a>
+            <div style="display: inline-block; float: right">
+                <a style="text-decoration: none" href="/main/articles/{{ onenews.id }}/edit/">
+                    <button class="btn btn-outline-dark">{% trans "Change" %}</button>
+                </a>
+                <a style="text-decoration: none" href="/main/articles/{{ onenews.id }}/delete/">
+                    <button class="btn btn-outline-dark">{% trans "Delete" %}</button>
+                </a>
+            </div>
         {% endif %}
     {% endif %}
-</div>
-<h4 align="left">{% trans "Comments" %}</h4>
-{% for com in onenews.comment_set.all %}
-    {% if com %}
-        <p align="left"><strong>{{ com.user }}</strong> &middot; {{ com.comment_text }}</p>
-        <p align="left">{% trans "Rating" %}: {{ com.comment_rating }}</p>
-            {% if request.user.is_authenticated %}
-                <form style="margin-bottom: 10px" action="{% url 'add_comment_like' com.pk %}" method="post">
-                    {% csrf_token %}
-                    <button style="margin-right: 1600px" class="btn btn-outline-success">Like</button>
-                </form>
-                <form action="{% url 'add_comment_dislike' com.pk %}" method="post">
-                    {% csrf_token %}
-                    <button style="margin-right: 1600px" class="btn btn-outline-danger">Dislike</button>
-                </form>
-            {% endif %}
+    {% if onenews.image %}
+        <img class="news-image" src="{{ onenews.image.url }}" alt="img">
+    {% endif %}
+    <p class="news-author">{% trans "Author" %}: {{ onenews.author }}</p>
+    <p class="news-date">{{ onenews.register_date }} &middot;
+    {% trans "Rating" %}: {{ onenews.content_rating }}</p>
+    <pre class="news-content-detail">{{ onenews.content }}</pre>
+    {% if request.user.is_authenticated %}
+        <form style="margin-bottom: 5px; display: inline-block" action="{% url 'add_content_like' onenews.pk %}">
+            {% csrf_token %}
+            <button class="btn btn-outline-success">{% trans "Like" %}</button>
+        </form>
+        <form style="margin-bottom: 5px; display: inline-block" action="{% url 'add_content_dislike' onenews.pk %}">
+            {% csrf_token %}
+            <button class="btn btn-outline-danger">{% trans "Dislike" %}</button>
+        </form>
     {% endif %}
     <hr>
-{% endfor %}
-
-
-<h4 align="left">{% trans "Add a comment" %}</h4>
-{% if request.user.is_authenticated %}
-    <form action="" method="post">{% csrf_token %}
-        {{ form|crispy }}
-        <p align="left"><button class="btn btn-outline-dark" type="submit">Save</button></p>
-    </form>
-{% else %}
-    <h5>{% trans "To leave a comment, please" %} <a href="/">{% trans "log in" %}</a></h5>
-{% endif %}
+    {% if onenews.comment_set.exists %}
+        <h4>{% trans "Comments" %}</h4>
+        <br>
+        {% for com in onenews.comment_set.all %}
+            {% if com %}
+                <p><strong>{{ com.user }}</strong> &middot; {{ com.comment_text }}</p>
+                <p>{% trans "Rating" %}: {{ com.comment_rating }}</p>
+                    {% if request.user.is_authenticated %}
+                        <form style="margin-bottom: 10px; display: inline-block" action="{% url 'add_comment_like' com.pk %}" method="post">
+                            {% csrf_token %}
+                            <button class="btn btn-outline-success">{% trans "Like" %}</button>
+                        </form>
+                        <form style="display: inline-block" action="{% url 'add_comment_dislike' com.pk %}" method="post">
+                            {% csrf_token %}
+                            <button class="btn btn-outline-danger">{% trans "Dislike" %}</button>
+                        </form>
+                    {% endif %}
+            {% endif %}
+        <br>
+        <br>
+        {% endfor %}
+    {% endif %}
+    <h4>{% trans "Add a comment" %}</h4>
+    {% if request.user.is_authenticated %}
+        <form action="" method="post">{% csrf_token %}
+            {{ form|crispy }}
+            <p><button class="btn btn-outline-dark" type="submit">{% trans "Save" %}</button></p>
+        </form>
+    {% else %}
+        <p class="news-content">{% trans "To leave a comment, please" %} <a href="/">{% trans "log in" %}</a></p>
+    {% endif %}
+</div>
 {% endblock content %}

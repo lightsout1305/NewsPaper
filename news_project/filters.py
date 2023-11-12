@@ -5,7 +5,6 @@ from django.forms import DateInput
 
 
 class PostFilter(FilterSet):
-
     def __init__(self, *args, **kwargs):
         super(PostFilter, self).__init__(*args, **kwargs)
         self.filters['title'].label = _("Type title")
