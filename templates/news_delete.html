@@ -2,11 +2,17 @@
 {% load i18n %}
 
 {% block content %}
-<h1>{% trans "Delete the news" %}</h1>
-<hr>
-<form action="" method="post">
-    {% csrf_token %}
-    <p>{% trans "Delete" %} "{{ object.title }} {% trans "from" %} {{ object.author.author_user.username }}?"</p>
-    <input type="submit" class="btn btn-outline-dark" value="{% trans "Delete" %}" />
-</form>
+<br>
+<div class="news">
+    <h1 style="float: left; margin-top: 30px">{% trans "Delete the news" %}</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p class="news-content-detail">{% trans "Delete" %} "{{ object.title }} {% trans "from" %} {{ object.author.author_user.username }}?"</p>
+        <input type="submit" class="btn btn-outline-dark" value="{% trans "Delete" %}" />
+    </form>
+</div>
 {% endblock content %}

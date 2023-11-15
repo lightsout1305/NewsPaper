@@ -239,11 +239,11 @@ msgstr "Стать автором"
 
 #: .\templates\flatpages\default.html:41
 msgid "Create your articles"
-msgstr "Создайте ваши статьи"
+msgstr "Создать статью"
 
 #: .\templates\flatpages\default.html:44
 msgid "Create your news"
-msgstr "Создайте ваши новости"
+msgstr "Создать новость"
 
 #: .\templates\flatpages\default.html:47
 msgid "Subcribe to Categories"

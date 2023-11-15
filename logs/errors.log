@@ -2661,3 +2661,35 @@ Traceback (most recent call last):
     self.fields['title'].widgets.attrs.update({'style': 'font-size: 30px'})
 AttributeError: 'CharField' object has no attribute 'widgets'
 2023-11-15 15:33:00,157 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/news/79/edit/ HTTP/1.1" 500 121529
+2023-11-15 20:37:33,662 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:37:59,164 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:38:06,606 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:38:40,867 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:21,354 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:22,430 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:28,440 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:29,753 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:39,889 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:39,895 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:41,040 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:42,553 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:58,691 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:58,692 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:43:59,796 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2023-11-15 20:44:00,940 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |You're accessing the development server over HTTPS, but it only supports HTTP.
+
