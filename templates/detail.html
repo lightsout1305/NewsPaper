@@ -37,6 +37,8 @@
     {% endif %}
     {% if onenews.image %}
         <img class="news-image" src="{{ onenews.image.url }}" alt="img">
+    {% else %}
+        <p></p>
     {% endif %}
     <p class="news-author">{% trans "Author" %}: {{ onenews.author }}</p>
     <p class="news-date">{{ onenews.register_date }} &middot;

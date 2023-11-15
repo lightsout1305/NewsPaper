@@ -78,7 +78,7 @@ class NewsSearch(ListView):
 class NewsCreate(PermissionRequiredMixin, CreateView):
     form_class = PostForm
     model = Post
-    template_name = 'news_edit.html'
+    template_name = 'news_create.html'
     permission_required = ('news_project.add_post', )
 
     def form_valid(self, form):
@@ -92,7 +92,7 @@ class NewsCreate(PermissionRequiredMixin, CreateView):
 class ArticleCreate(PermissionRequiredMixin, CreateView):
     form_class = PostForm
     model = Post
-    template_name = 'article_edit.html'
+    template_name = 'article_create.html'
     permission_required = ('news_project.add_post', )
 
     def form_valid(self, form):

@@ -2613,3 +2613,51 @@ Traceback (most recent call last):
     values = list(values)
 TypeError: 'ManyRelatedManager' object is not iterable
 2023-11-10 00:41:42,819 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/ HTTP/1.1" 500 246236
+2023-11-15 15:30:53,671 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'AttributeError'>, AttributeError("'CharField' object has no attribute 'widgets'"), <traceback object at 0x00000228871B3280>) |Internal Server Error: /main/news/79/edit/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 204, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 74, in get_context_data
+    kwargs["form"] = self.get_form()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 39, in get_form
+    return form_class(**self.get_form_kwargs())
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\forms.py", line 12, in __init__
+    self.fields['title'].widgets.attrs.update({'style': 'font-size: 30px'})
+AttributeError: 'CharField' object has no attribute 'widgets'
+2023-11-15 15:30:55,803 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/news/79/edit/ HTTP/1.1" 500 121680
+2023-11-15 15:32:58,220 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\utils\log.py | (<class 'AttributeError'>, AttributeError("'CharField' object has no attribute 'widgets'"), <traceback object at 0x00000175F57C2480>) |Internal Server Error: /main/news/79/edit/
+Traceback (most recent call last):
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 204, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 74, in get_context_data
+    kwargs["form"] = self.get_form()
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\views\generic\edit.py", line 39, in get_form
+    return form_class(**self.get_form_kwargs())
+  File "C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\news_project\forms.py", line 12, in __init__
+    self.fields['title'].widgets.attrs.update({'style': 'font-size: 30px'})
+AttributeError: 'CharField' object has no attribute 'widgets'
+2023-11-15 15:33:00,157 | ERROR | C:\Users\Димэн\Desktop\Python\code\module_D\models\newsportal\NewsPaper\.venv\lib\site-packages\django\core\servers\basehttp.py | None |"GET /main/news/79/edit/ HTTP/1.1" 500 121529
