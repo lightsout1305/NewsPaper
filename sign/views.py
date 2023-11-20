@@ -34,4 +34,11 @@ def upgrade_me(request):
     return redirect('/main/')
 
 
-# Create your views here.
+@login_required
+def degrade_me(request):
+    user = request.user
+    authors_group = Group.objects.get(name='authors')
+    if request.user.groups.filter(name='authors').exists():
+        authors_group.user_set.remove(user)
+        Author.objects.get(author_user_id=user.id).delete()
+    return redirect('/main/')

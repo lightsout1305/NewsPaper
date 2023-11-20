@@ -59,9 +59,9 @@
                                     {% get_language_info_list for LANGUAGES as languages %} <!-- Помещаем их в список languages -->
                                     {% for language in languages %} <!-- Итерируясь по списку, выводим их название на языке пользователя и код -->
                                         <option value="{{ language.code }}"
-                                                {% if language.code == LANGUAGE_CODE %}
+                                            {% if language.code == LANGUAGE_CODE %}
                                                 selected
-                                                {% endif %}>
+                                            {% endif %}>
                                         {{ language.name_local }} - {{ language.code }}
                                         </option>
                                     {% endfor %}
@@ -71,6 +71,20 @@
                             <input type="submit" value="{% trans 'Set' %}" class="btn btn-outline-light">
                         </form>
                     </li>
+                    <div class="timezone" style="position: absolute; left: 80%">
+                        {% get_current_timezone as TIME_ZONE %}
+                        <form action="{% url 'set_timezone' %}" method="post">
+                            {% csrf_token %}
+                            <label>
+                                <select style="width: 80px" name="timezone" class="form-select-sm">
+                                    {% for tz in timezones %}
+                                        <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected {% endif %}>{{ tz }}</option>
+                                    {% endfor %}
+                                </select>
+                            </label>
+                            <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-light">
+                        </form>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -84,36 +98,6 @@
                 {% endblock content %}
                 </div>
             </div>
-        </div>
-        <div class="timezone">
-            {% get_current_timezone as TIME_ZONE %}
-            <form style="margin-left: 120px" action="{% url 'set_timezone' %}" method="post">
-                {% csrf_token %}
-                {% if current_time.hour >= 19 or current_time.hour <= 7 %}
-                    <label for="timezone" style="color: white">{% trans "Time zone:" %}</label>
-                {% else %}
-                    <label for="timezone">{% trans "Time zone:" %}</label>
-                {% endif %}
-                <label>
-                    <select name="timezone">
-                        {% for tz in timezones %}
-                            <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected {% endif %}>{{ tz }}</option>
-                        {% endfor %}
-                    </select>
-                </label>
-                {% if current_time.hour >= 19 or current_time.hour <= 7 %}
-                    <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-light">
-                {% else %}
-                    <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-dark">
-                {% endif %}
-            </form>
-            {% if current_time.hour >= 19 or current_time.hour <= 7 %}
-                <h6 style="margin-left: 120px; color: white">{{ TIME_ZONE }}</h6>
-                <h6 style="margin-left: 120px; color: white">{{ current_time|timezone:TIME_ZONE }}</h6>
-            {% else %}
-                <h6 style="margin-left: 120px">{{ TIME_ZONE }}</h6>
-                <h6 style="margin-left: 120px">{{ current_time|timezone:TIME_ZONE }}</h6>
-            {% endif %}
         </div>
     </body>
 </html>

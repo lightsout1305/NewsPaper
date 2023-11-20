@@ -1,21 +1,74 @@
 {% extends 'main.html' %}
 {% load i18n %}
+{% load custom_filters %}
 
 {% block content %}
-<h2>{% trans "The authorized user page of" %} {{ request.user.username }}</h2>
+<br>
+<div class="news">
+    <h2>{% trans "My profile" %}</h2>
     <hr>
-<div>
-    <h5>{% trans "Here is the personal information of every authorized user" %}</h5>
-</div>
-    {% if is_not_author %}
-        <a href="/sign/upgrade/">
-        <button class="btn btn-outline-success">{% trans "Become author" %}</button>
+    <div>
+        <h5>E-mail: {{ request.user.email }}</h5>
+        <br>
+        {% if request.user.first_name %}
+            <h5>{% trans "First name" %}: {{ request.user.first_name }}</h5>
+        {% else %}
+            <h5>{% trans "First name" %}: {% trans "no name yet" %}</h5>
+        {% endif %}
+        <br>
+        {% if request.user.last_name %}
+            <h5>{% trans "Last name" %}: {{ request.user.last_name }}</h5>
+        {% else %}
+            <h5>{% trans "Last name" %}: {% trans "no last name yet" %}</h5>
+        {% endif %}
+        <br>
+        {% if request.user.username %}
+            <h5>{% trans "Nickname" %}: {{ request.user.username }}</h5>
+        {% else %}
+            <h5>{% trans "Nickname" %}: {% trans "no nickname" %}</h5>
+        {% endif %}
+        <hr>
+    </div>
+        {% if is_not_author %}
+            <a href="/sign/upgrade/" style="text-decoration: none">
+            <button class="btn btn-outline-success">{% trans "Become author" %}</button>
+            </a>
+        {% elif is_author %}
+            <a href="/sign/degrade/" style="text-decoration: none">
+            <button class="btn btn-outline-danger">{% trans "Quit being author" %}</button>
+            </a>
+        {% endif %}
+        <a href="/sign/profile_update/" style="text-decoration: none">
+        <button class="btn btn-outline-dark">{% trans "Change your profile" %}</button>
         </a>
+        <a href="/sign/logout/" style="text-decoration: none">
+        <button class="btn btn-outline-dark">{% trans "Quit" %}</button>
+        </a>
+</div>
+{% if is_author %}
+    <div class="news">
+        <h2>{% trans "My content" %}</h2>
+        <hr>
+    {% if content %}
+        {% for con in content %}
+            <div class="news">
+                <a href="{{ site }}/main/search/{{ con.id }}" class="news-title">{{ con.title|censor }}</a>
+                {% for cat in con.categories.all %}
+                    <p class="news-category">&middot; {{ cat }}</p>
+                {% endfor %}
+                <p class="news-date">{{ con.register_date|date:'M d Y' }}</p>
+                <p class="news-content">{{ con.content|truncatechars:100|censor }}</p>
+                <p class="news-author">&middot; {{ con.author }}</p>
+                {% if con.choice == 'ARTL' %}
+                    <p class="news-type">{% trans "Article" %}</p>
+                {% else %}
+                    <p class="news-type">{% trans "News" %}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% else %}
+        <h4>{% trans "No content yet..." %}</h4>
+        </div>
     {% endif %}
-    <a href="/sign/profile_update/">
-    <button class="btn btn-outline-dark">{% trans "Change your profile" %}</button>
-    </a>
-    <a href="/sign/logout/">
-    <button class="btn btn-outline-dark">{% trans "Quit" %}</button>
-    </a>
+{% endif %}
 {% endblock %}
