@@ -22,13 +22,14 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <div class="container">
-                <a class="news-logo" href="/main/"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <a class="news-logo" href="/main/">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarResponsive"
                         aria-controls="navbarResponsive" aria-expanded="false"
                         aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                    </button>
+                </a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -46,15 +47,28 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/main/categories/">{% trans "Subcribe to Categories" %}</a>
                     </li>
+{#                    <li class="nav-item">#}
+{#                        <form class="form-select-lg" action="{% url 'set_timezone' %}" method="post">#}
+{#                        {% get_current_timezone as TIME_ZONE %}#}
+{#                            {% csrf_token %}#}
+{#                            <label>#}
+{#                                <select style="width: 150px" name="timezone" class="form-select-sm">#}
+{#                                    {% for tz in timezones %}#}
+{#                                        <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected {% endif %}>{{ tz }}</option>#}
+{#                                    {% endfor %}#}
+{#                                </select>#}
+{#                            </label>#}
+{#                            <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-light">#}
+{#                        </form>#}
+{#                  </li>#}
                     <li class="nav-item">
                         <form class="form-select-lg" action="{% url 'set_language' %}" method="POST">
                             {% csrf_token %}
                             <!-- Не забываем по csrf_token для POST запросов -->
-                            <input type="hidden" name="next" value="{{ redirect_to }}" style="margin-right: 55px">
+                            <input type="hidden" name="next" value="{{ redirect_to }}">
                             <label>
                                 <select name="language" class="form-select-sm">
                                     {% get_current_language as LANGUAGE_CODE %}
-{#                                    {% cache 600 welcome LANGUAGE_CODE %}#}
                                     {% get_available_languages as LANGUAGES %} <!-- получаем языки -->
                                     {% get_language_info_list for LANGUAGES as languages %} <!-- Помещаем их в список languages -->
                                     {% for language in languages %} <!-- Итерируясь по списку, выводим их название на языке пользователя и код -->
@@ -65,26 +79,11 @@
                                         {{ language.name_local }} - {{ language.code }}
                                         </option>
                                     {% endfor %}
-{#                                    {% endcache %}#}
                                 </select>
                             </label>
                             <input type="submit" value="{% trans 'Set' %}" class="btn btn-outline-light">
                         </form>
                     </li>
-                    <div class="timezone" style="position: absolute; left: 80%">
-                        {% get_current_timezone as TIME_ZONE %}
-                        <form action="{% url 'set_timezone' %}" method="post">
-                            {% csrf_token %}
-                            <label>
-                                <select style="width: 80px" name="timezone" class="form-select-sm">
-                                    {% for tz in timezones %}
-                                        <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected {% endif %}>{{ tz }}</option>
-                                    {% endfor %}
-                                </select>
-                            </label>
-                            <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-light">
-                        </form>
-                    </div>
                 </ul>
             </div>
         </div>
