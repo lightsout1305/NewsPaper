@@ -1,6 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm
 from allauth.account.forms import SignupForm
 from django.contrib.auth.models import User, Group
+from django.utils.translation import gettext as _
 from django import forms
 
 
@@ -33,6 +34,13 @@ class CommonSignupForm(SignupForm):
 
 
 class ProfileUpdateForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["username"].label = _("Username")
+        self.fields["first_name"].label = _("First name")
+        self.fields["last_name"].label = _("Last name")
+        self.fields["email"].label = _("E-mail")
+
     class Meta:
         model = User
         fields = [
@@ -41,9 +49,3 @@ class ProfileUpdateForm(forms.ModelForm):
             'last_name',
             'email'
         ]
-
-        labels = {'username': 'Псевдоним',
-                  'first_name': 'Имя',
-                  'last_name': 'Фамилия',
-                  'email': 'Электронная почта'
-                  }

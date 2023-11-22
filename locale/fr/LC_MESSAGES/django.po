@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-15 15:59+0300\n"
+"POT-Creation-Date: 2023-11-22 23:45+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,24 @@ msgstr "Choisissez des catégories"
 #: .\news_project\forms.py:15
 msgid "Image"
 msgstr "Image"
+
+#: .\sign\forms.py:46
+msgid "Username"
+msgstr "Pseudonyme"
+
+#: .\sign\forms.py:47 .\templates\protect\index.html:14
+#: .\templates\protect\index.html:16
+msgid "First name"
+msgstr "Prénom"
+
+#: .\sign\forms.py:48 .\templates\protect\index.html:20
+#: .\templates\protect\index.html:22
+msgid "Last name"
+msgstr "Nom"
+
+#: .\sign\forms.py:49
+msgid "E-mail"
+msgstr "E-mail"
 
 #: .\templates\account\email\email_confirmation_message.html:7
 msgid "Confirmation"
@@ -156,17 +174,17 @@ msgstr "Créer l'article"
 msgid "Save"
 msgstr "Sauvegarder"
 
-#: .\templates\article_delete.html:5
+#: .\templates\article_delete.html:7
 msgid "Delete the article"
 msgstr "Supprimer l'article"
 
-#: .\templates\article_delete.html:9 .\templates\article_delete.html:10
+#: .\templates\article_delete.html:14 .\templates\article_delete.html:15
 #: .\templates\detail.html:23 .\templates\detail.html:33
-#: .\templates\news_delete.html:9 .\templates\news_delete.html:10
+#: .\templates\news_delete.html:14 .\templates\news_delete.html:15
 msgid "Delete"
 msgstr "Supprimer"
 
-#: .\templates\article_delete.html:9 .\templates\news_delete.html:9
+#: .\templates\article_delete.html:14 .\templates\news_delete.html:14
 msgid "from"
 msgstr "de"
 
@@ -230,37 +248,38 @@ msgstr "Pour commenter, veuillez"
 msgid "log in"
 msgstr "vous enregistrer"
 
-#: .\templates\flatpages\default.html:35
+#: .\templates\flatpages\default.html:36
 msgid "Search content"
 msgstr "Chercher"
 
-#: .\templates\flatpages\default.html:38 .\templates\protect\index.html:12
+#: .\templates\flatpages\default.html:39 .\templates\protect\index.html:34
 msgid "Become author"
 msgstr "Devenir auteur"
 
-#: .\templates\flatpages\default.html:41
+#: .\templates\flatpages\default.html:42
 msgid "Create your articles"
 msgstr "Créez vos articles"
 
-#: .\templates\flatpages\default.html:44
+#: .\templates\flatpages\default.html:45
 msgid "Create your news"
 msgstr "Créez vos actualités"
 
-#: .\templates\flatpages\default.html:47
+#: .\templates\flatpages\default.html:48
 msgid "Subcribe to Categories"
 msgstr "Abonnez-vous aux Categories"
 
-#: .\templates\flatpages\default.html:71 .\templates\flatpages\default.html:105
-#: .\templates\flatpages\default.html:107
+#: .\templates\flatpages\default.html:84 .\templates\flatpages\default.html:116
+#: .\templates\flatpages\default.html:118
 msgid "Set"
 msgstr "Choisir"
 
-#: .\templates\flatpages\default.html:93 .\templates\flatpages\default.html:95
+#: .\templates\flatpages\default.html:104
+#: .\templates\flatpages\default.html:106
 msgid "Time zone:"
 msgstr "Fuseau horaire:"
 
 #: .\templates\news.html:10 .\templates\news.html:39
-#: .\templates\news_search.html:61
+#: .\templates\news_search.html:61 .\templates\protect\index.html:65
 msgid "News"
 msgstr "Actualités"
 
@@ -270,6 +289,7 @@ msgid "Main news"
 msgstr "Actualités récentes"
 
 #: .\templates\news.html:37 .\templates\news_search.html:59
+#: .\templates\protect\index.html:63
 msgid "Article"
 msgstr "Article"
 
@@ -282,7 +302,7 @@ msgstr "Pas d'actualités..."
 msgid "Create news"
 msgstr "Créer l'actualité"
 
-#: .\templates\news_delete.html:5
+#: .\templates\news_delete.html:7
 msgid "Delete the news"
 msgstr "Supprimer l'actualité"
 
@@ -357,25 +377,55 @@ msgstr "Chercher"
 msgid "Change the profile"
 msgstr "Modifier le profil"
 
-#: .\templates\profile_update.html:12
-msgid "Update the profile"
+#: .\templates\profile_update.html:11 .\templates\profile_update.html:16
+msgid "Update profile"
 msgstr "Mettre à jour le profil"
 
-#: .\templates\protect\index.html:5
-msgid "The authorized user page of"
-msgstr "La page de l'utilisateur autorisé"
-
 #: .\templates\protect\index.html:8
-msgid "Here is the personal information of every authorized user"
-msgstr "Voilà l'information personnelle de chaque utilisateur autorisé"
+msgid "My profile"
+msgstr "Mon profil"
 
 #: .\templates\protect\index.html:16
+msgid "no name yet"
+msgstr "pas de prénom"
+
+#: .\templates\protect\index.html:22
+msgid "no last name yet"
+msgstr "pas de nom"
+
+#: .\templates\protect\index.html:26 .\templates\protect\index.html:28
+msgid "Nickname"
+msgstr "Pseudonyme"
+
+#: .\templates\protect\index.html:28
+msgid "no nickname"
+msgstr "pas de pseudonyme"
+
+#: .\templates\protect\index.html:38
+msgid "Quit being author"
+msgstr "Quitter auteur"
+
+#: .\templates\protect\index.html:42
 msgid "Change your profile"
 msgstr "Modifier le profil"
 
-#: .\templates\protect\index.html:19
+#: .\templates\protect\index.html:45
 msgid "Quit"
 msgstr "Quitter"
+
+#: .\templates\protect\index.html:50
+msgid "My content"
+msgstr "Mon contenu"
+
+#: .\templates\protect\index.html:70
+msgid "No content yet..."
+msgstr "Pas de contenu..."
+
+#~ msgid "The authorized user page of"
+#~ msgstr "La page de l'utilisateur autorisé"
+
+#~ msgid "Here is the personal information of every authorized user"
+#~ msgstr "Voilà l'information personnelle de chaque utilisateur autorisé"
 
 #~ msgid "Number of news"
 #~ msgstr "Nombre d'actualités"

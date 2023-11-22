@@ -18,7 +18,7 @@ class ProfileUpdate(LoginRequiredMixin, UpdateView):
     template_name = 'profile_update.html'
     model = User
     form_class = ProfileUpdateForm
-    success_url = '/main/'
+    success_url = '/'
 
     def get_object(self, **kwargs):
         return self.request.user

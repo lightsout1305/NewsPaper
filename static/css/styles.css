@@ -11294,8 +11294,7 @@ textarea.form-control-lg {
 }
 
 .timezone {
-  position: relative;
-  top: 10%;
+  bottom: 0;
 }
 
 .news {
@@ -11367,6 +11366,7 @@ textarea.form-control-lg {
 }
 
 .news-content-detail {
+  display: inline-block;
   font-family: "Hind Siliguri Regular", sans-serif;
   font-size: 20px;
   color: black;
@@ -11374,4 +11374,7 @@ textarea.form-control-lg {
   width: 100%;
   height: auto;
   border: none;
+  resize: none;
+  overflow: hidden;
+  line-height: 40px;
 }

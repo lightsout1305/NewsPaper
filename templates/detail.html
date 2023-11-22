@@ -43,7 +43,7 @@
     <p class="news-author">{% trans "Author" %}: {{ onenews.author }}</p>
     <p class="news-date">{{ onenews.register_date }} &middot;
     {% trans "Rating" %}: {{ onenews.content_rating }}</p>
-    <pre class="news-content-detail">{{ onenews.content }}</pre>
+    <span role="textbox" class="news-content-detail">{{ onenews.content|linebreaks }}</span>
     {% if request.user.is_authenticated %}
         <form style="margin-bottom: 5px; display: inline-block" action="{% url 'add_content_like' onenews.pk %}">
             {% csrf_token %}
@@ -60,7 +60,7 @@
         <br>
         {% for com in onenews.comment_set.all %}
             {% if com %}
-                <p><strong>{{ com.user }}</strong> &middot; {{ com.comment_text }}</p>
+                <p><strong>{{ com.user }}</strong> &middot; {{ com.comment_text|linebreaks }}</p>
                 <p>{% trans "Rating" %}: {{ com.comment_rating }}</p>
                     {% if request.user.is_authenticated %}
                         <form style="margin-bottom: 10px; display: inline-block" action="{% url 'add_comment_like' com.pk %}" method="post">

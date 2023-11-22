@@ -7,29 +7,32 @@
 {% block title %}{% trans "Category subscribtion" %}{% endblock title %}
 
 {% block content %}
-<html lang="rus">
-<h3>{% trans "Select the category to subscribe" %}</h3>
-    <hr>
-{% for name in category_detail %}
-<form action="{% url 'subscribe_to_category' name.id %}" method="post">{% csrf_token %}
-    <h6>
-        <a href="{% url 'subscribe_to_category' name.id %}">
-            <button class="btn btn-outline-success">{% trans "Subscribe to" %} {{ name }}</button>
-        </a>
-    </h6>
-</form>
-{% endfor %}
-
-<h3>{% trans "Select the category to unsubscribe" %}</h3>
-    <hr>
-{% for name in category_detail %}
-<form action="{% url 'unsubscribe_to_category' name.id %}" method="post">{% csrf_token %}
-    <h6>
-        <a href="{% url 'unsubscribe_to_category' name.id %}">
-            <button class="btn btn-outline-danger">{% trans "Unsubscribe from" %} {{ name }}</button>
-        </a>
-    </h6>
-</form>
-{% endfor %}
+<br>
+<div class="news" style="width: 45%; display: inline-block; float: left">
+    <h3>{% trans "Select the category to subscribe" %}</h3>
+    <br>
+    {% for name in category_detail %}
+    <form style="display: inline-block" action="{% url 'subscribe_to_category' name.id %}" method="post">{% csrf_token %}
+        <h6 style="display: inline-block">
+            <a href="{% url 'subscribe_to_category' name.id %}">
+                <button class="btn btn-outline-success">{{ name }}</button>
+            </a>
+        </h6>
+    </form>
+    {% endfor %}
+</div>
+<br>
+<div class="news" style="width: 45%; float: right; position: relative; bottom: 11%">
+    <h3>{% trans "Select the category to unsubscribe" %}</h3>
+    <br>
+    {% for name in category_detail %}
+    <form style="display: inline-block" action="{% url 'unsubscribe_to_category' name.id %}" method="post">{% csrf_token %}
+        <h6 style="display: inline-block">
+            <a href="{% url 'unsubscribe_to_category' name.id %}">
+                <button class="btn btn-outline-danger">{{ name }}</button>
+            </a>
+        </h6>
+    </form>
+    {% endfor %}
+</div>
 {% endblock content %}
-</html>

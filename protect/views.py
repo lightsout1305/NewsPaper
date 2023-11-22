@@ -12,5 +12,6 @@ class IndexView(LoginRequiredMixin, TemplateView):
         context['is_not_author'] = not self.request.user.groups.filter(name='authors').exists()
         context['site'] = Site.objects.get_current().domain
         context['is_author'] = self.request.user.groups.filter(name='authors').exists()
-        context['content'] = Post.objects.filter(author_id=self.request.user.author.id).order_by('-register_date')
+        context['content'] = Post.objects.filter(author_id=self.request.user.author.id).order_by('-register_date') if \
+            self.request.user.groups.filter(name='authors').exists() else None
         return context

@@ -97,6 +97,42 @@
                 {% endblock content %}
                 </div>
             </div>
+
+            {% get_current_timezone as TIME_ZONE %}
+            <form action="{% url 'set_timezone' %}" method="POST">
+                {% csrf_token %}
+                {% if current_time.hour >= 19 or current_time.hour <= 7 %}
+                    <label for="timezone" style="color: white">{% trans "Time zone:" %}</label>
+                {% else %}
+                    <label for="timezone">{% trans "Time zone:" %}</label>
+                {% endif %}
+                <label>
+                    <select name="timezone">
+                        {% for tz in timezones %}
+                            <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected{% endif %}>{{ tz }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+                {% if current_time.hour >= 19 or current_time.hour <= 7 %}
+                    <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-light">
+                {% else %}
+                    <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-dark">
+                {% endif %}
+            </form>
+            {% for model in models %}
+            <div class="model-class">
+                {{ model.name }}
+            </div>
+            {% endfor %}
+            {% if current_time.hour >= 19 or current_time.hour <= 7 %}
+                <h6 style="color: white">{{ TIME_ZONE }}</h6>
+                <h6 style="color: white">{{ current_time|timezone:TIME_ZONE }}</h6>
+            {% else %}
+                <h6>{{ TIME_ZONE }}</h6>
+                <h6>{{ current_time|timezone:TIME_ZONE }}</h6>
+            {% endif %}
+            <br>
+            <br>
         </div>
     </body>
 </html>

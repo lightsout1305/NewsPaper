@@ -29,46 +29,49 @@
         {% endif %}
         <hr>
     </div>
-        {% if is_not_author %}
-            <a href="/sign/upgrade/" style="text-decoration: none">
-            <button class="btn btn-outline-success">{% trans "Become author" %}</button>
-            </a>
-        {% elif is_author %}
-            <a href="/sign/degrade/" style="text-decoration: none">
-            <button class="btn btn-outline-danger">{% trans "Quit being author" %}</button>
-            </a>
-        {% endif %}
-        <a href="/sign/profile_update/" style="text-decoration: none">
-        <button class="btn btn-outline-dark">{% trans "Change your profile" %}</button>
+    {% if is_not_author %}
+        <a href="/sign/upgrade/" style="text-decoration: none">
+        <button class="btn btn-outline-success">{% trans "Become author" %}</button>
         </a>
-        <a href="/sign/logout/" style="text-decoration: none">
-        <button class="btn btn-outline-dark">{% trans "Quit" %}</button>
+    {% elif is_author %}
+        <a href="/sign/degrade/" style="text-decoration: none">
+        <button class="btn btn-outline-danger">{% trans "Quit being author" %}</button>
         </a>
+    {% endif %}
+    <a href="/sign/profile_update/" style="text-decoration: none">
+    <button class="btn btn-outline-dark">{% trans "Change your profile" %}</button>
+    </a>
+    <a href="/sign/logout/" style="text-decoration: none">
+    <button class="btn btn-outline-dark">{% trans "Quit" %}</button>
+    </a>
 </div>
 {% if is_author %}
     <div class="news">
         <h2>{% trans "My content" %}</h2>
-        <hr>
-    {% if content %}
-        {% for con in content %}
-            <div class="news">
-                <a href="{{ site }}/main/search/{{ con.id }}" class="news-title">{{ con.title|censor }}</a>
-                {% for cat in con.categories.all %}
-                    <p class="news-category">&middot; {{ cat }}</p>
-                {% endfor %}
-                <p class="news-date">{{ con.register_date|date:'M d Y' }}</p>
-                <p class="news-content">{{ con.content|truncatechars:100|censor }}</p>
-                <p class="news-author">&middot; {{ con.author }}</p>
-                {% if con.choice == 'ARTL' %}
-                    <p class="news-type">{% trans "Article" %}</p>
-                {% else %}
-                    <p class="news-type">{% trans "News" %}</p>
-                {% endif %}
-            </div>
-        {% endfor %}
-    {% else %}
-        <h4>{% trans "No content yet..." %}</h4>
-        </div>
-    {% endif %}
+        <br>
+        {% if content %}
+            {% for con in content %}
+                <div class="news">
+                    <a href="{{ site }}/main/search/{{ con.id }}" class="news-title">{{ con.title|censor }}</a>
+                    {% for cat in con.categories.all %}
+                        <p class="news-category">&middot; {{ cat }}</p>
+                    {% endfor %}
+                    <p class="news-date">{{ con.register_date|date:'M d Y' }}</p>
+                    {% if con.image %}
+                        <img class="news-image" src="{{ con.image.url }}" alt="img">
+                    {% endif %}
+                    <p class="news-content">{{ con.content|truncatechars:100|censor }}</p>
+                    <p class="news-author">&middot; {{ con.author }}</p>
+                    {% if con.choice == 'ARTL' %}
+                        <p class="news-type">{% trans "Article" %}</p>
+                    {% else %}
+                        <p class="news-type">{% trans "News" %}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        {% else %}
+            <h4>{% trans "No content yet..." %}</h4>
+        {% endif %}
+    </div>
 {% endif %}
 {% endblock %}

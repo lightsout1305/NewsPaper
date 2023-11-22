@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-15 15:57+0300\n"
+"POT-Creation-Date: 2023-11-22 23:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,6 +50,24 @@ msgstr "Категории"
 #: .\news_project\forms.py:15
 msgid "Image"
 msgstr "Изображение"
+
+#: .\sign\forms.py:46
+msgid "Username"
+msgstr "Псевдоним"
+
+#: .\sign\forms.py:47 .\templates\protect\index.html:14
+#: .\templates\protect\index.html:16
+msgid "First name"
+msgstr "Имя"
+
+#: .\sign\forms.py:48 .\templates\protect\index.html:20
+#: .\templates\protect\index.html:22
+msgid "Last name"
+msgstr "Фамилия"
+
+#: .\sign\forms.py:49
+msgid "E-mail"
+msgstr "E-mail"
 
 #: .\templates\account\email\email_confirmation_message.html:7
 msgid "Confirmation"
@@ -155,17 +173,17 @@ msgstr "Создать статью"
 msgid "Save"
 msgstr "Сохранить"
 
-#: .\templates\article_delete.html:5
+#: .\templates\article_delete.html:7
 msgid "Delete the article"
 msgstr "Удалить статью"
 
-#: .\templates\article_delete.html:9 .\templates\article_delete.html:10
+#: .\templates\article_delete.html:14 .\templates\article_delete.html:15
 #: .\templates\detail.html:23 .\templates\detail.html:33
-#: .\templates\news_delete.html:9 .\templates\news_delete.html:10
+#: .\templates\news_delete.html:14 .\templates\news_delete.html:15
 msgid "Delete"
 msgstr "Удалить"
 
-#: .\templates\article_delete.html:9 .\templates\news_delete.html:9
+#: .\templates\article_delete.html:14 .\templates\news_delete.html:14
 msgid "from"
 msgstr "от"
 
@@ -229,37 +247,38 @@ msgstr "Чтобы добавить комментарий, пожалуйста
 msgid "log in"
 msgstr "авторизуйтесь"
 
-#: .\templates\flatpages\default.html:35
+#: .\templates\flatpages\default.html:36
 msgid "Search content"
 msgstr "Поиск"
 
-#: .\templates\flatpages\default.html:38 .\templates\protect\index.html:12
+#: .\templates\flatpages\default.html:39 .\templates\protect\index.html:34
 msgid "Become author"
 msgstr "Стать автором"
 
-#: .\templates\flatpages\default.html:41
+#: .\templates\flatpages\default.html:42
 msgid "Create your articles"
 msgstr "Создать статью"
 
-#: .\templates\flatpages\default.html:44
+#: .\templates\flatpages\default.html:45
 msgid "Create your news"
 msgstr "Создать новость"
 
-#: .\templates\flatpages\default.html:47
+#: .\templates\flatpages\default.html:48
 msgid "Subcribe to Categories"
 msgstr "Подписаться на категории"
 
-#: .\templates\flatpages\default.html:71 .\templates\flatpages\default.html:105
-#: .\templates\flatpages\default.html:107
+#: .\templates\flatpages\default.html:84 .\templates\flatpages\default.html:116
+#: .\templates\flatpages\default.html:118
 msgid "Set"
 msgstr "Выбрать"
 
-#: .\templates\flatpages\default.html:93 .\templates\flatpages\default.html:95
+#: .\templates\flatpages\default.html:104
+#: .\templates\flatpages\default.html:106
 msgid "Time zone:"
 msgstr "Часовой пояс:"
 
 #: .\templates\news.html:10 .\templates\news.html:39
-#: .\templates\news_search.html:61
+#: .\templates\news_search.html:61 .\templates\protect\index.html:65
 msgid "News"
 msgstr "Новость"
 
@@ -269,6 +288,7 @@ msgid "Main news"
 msgstr "Главные новости"
 
 #: .\templates\news.html:37 .\templates\news_search.html:59
+#: .\templates\protect\index.html:63
 msgid "Article"
 msgstr "Статья"
 
@@ -281,7 +301,7 @@ msgstr "Пока новостей нет..."
 msgid "Create news"
 msgstr "Создать новость"
 
-#: .\templates\news_delete.html:5
+#: .\templates\news_delete.html:7
 msgid "Delete the news"
 msgstr "Удалить новость"
 
@@ -354,29 +374,59 @@ msgstr "Поиск"
 
 #: .\templates\profile_update.html:6
 msgid "Change the profile"
-msgstr "Изменить профиль"
-
-#: .\templates\profile_update.html:12
-msgid "Update the profile"
 msgstr "Обновить профиль"
 
-#: .\templates\protect\index.html:5
-msgid "The authorized user page of"
-msgstr "Страница авторизованного пользователя"
+#: .\templates\profile_update.html:11 .\templates\profile_update.html:16
+msgid "Update profile"
+msgstr "Изменить профиль"
 
 #: .\templates\protect\index.html:8
-msgid "Here is the personal information of every authorized user"
-msgstr ""
-"Здесь может содержаться личная информация каждого авторизованного "
-"пользователя"
+msgid "My profile"
+msgstr "Мой аккаунт"
 
 #: .\templates\protect\index.html:16
+msgid "no name yet"
+msgstr "нет имени"
+
+#: .\templates\protect\index.html:22
+msgid "no last name yet"
+msgstr "нет фамилии"
+
+#: .\templates\protect\index.html:26 .\templates\protect\index.html:28
+msgid "Nickname"
+msgstr "Псевдоним"
+
+#: .\templates\protect\index.html:28
+msgid "no nickname"
+msgstr "нет псевдонима"
+
+#: .\templates\protect\index.html:38
+msgid "Quit being author"
+msgstr "Не быть автором"
+
+#: .\templates\protect\index.html:42
 msgid "Change your profile"
 msgstr "Изменить профиль"
 
-#: .\templates\protect\index.html:19
+#: .\templates\protect\index.html:45
 msgid "Quit"
 msgstr "Выйти"
+
+#: .\templates\protect\index.html:50
+msgid "My content"
+msgstr "Мои материалы"
+
+#: .\templates\protect\index.html:70
+msgid "No content yet..."
+msgstr "Пока нет материалов..."
+
+#~ msgid "The authorized user page of"
+#~ msgstr "Страница авторизованного пользователя"
+
+#~ msgid "Here is the personal information of every authorized user"
+#~ msgstr ""
+#~ "Здесь может содержаться личная информация каждого авторизованного "
+#~ "пользователя"
 
 #~ msgid "Number of news"
 #~ msgstr "Количество новостей"
