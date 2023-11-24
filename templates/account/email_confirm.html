@@ -1,0 +1,17 @@
+{% extends "flatpages/default_auth.html" %}
+
+{% load i18n %}
+{% load account %}
+
+{% block title %}{% trans "Verify e-mail" %}{% endblock %}
+
+{% block content %}
+<div class="auth">
+    <h1>{% trans "Confirm email address" %}</h1>
+    <p>{% trans "Please confirm your email address." %}</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        <button class="btn btn-primary" type="submit">{% trans "Confirm" %}</button>
+    </form>
+</div>
+{% endblock %}

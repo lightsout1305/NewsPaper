@@ -11378,3 +11378,33 @@ textarea.form-control-lg {
   overflow: hidden;
   line-height: 40px;
 }
+
+.logo {
+  width: 40%;
+  height: 40%;
+  display: inline-block;
+  float: right;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+
+.auth {
+  width: 40%;
+  height: auto;
+  display: inline-block;
+  background-color: #FFFFFF;
+  text-align: left;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  padding: 15px 15px 15px 15px;
+  box-shadow: -20px -20px 40px 0px rgba(0, 0, 0, 0.07), 20px 20px 40px 0px rgba(0, 0, 0, 0.07);
+  float: left;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+}
+
+html {
+  height: 100%;
+}

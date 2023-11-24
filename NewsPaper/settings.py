@@ -143,7 +143,7 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_FORMS = {'signup': 'sign.forms.CommonSignupForm'}
 SOCIALACCOUNT_FORMS = {'signup': 'sign.socialforms.MyCustomSocialSignupForm'}
-SOCIALACCOUNT_AUTO_SIGNUP = False
+SOCIALACCOUNT_AUTO_SIGNUP = True
 SOCIALACCOUNT_LOGIN_ON_GET = True
 
 ACCOUNT_EMAIL_SUBJECT_PREFIX = '[NewsPaper]'

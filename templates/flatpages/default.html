@@ -47,20 +47,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/main/categories/">{% trans "Subcribe to Categories" %}</a>
                     </li>
-{#                    <li class="nav-item">#}
-{#                        <form class="form-select-lg" action="{% url 'set_timezone' %}" method="post">#}
-{#                        {% get_current_timezone as TIME_ZONE %}#}
-{#                            {% csrf_token %}#}
-{#                            <label>#}
-{#                                <select style="width: 150px" name="timezone" class="form-select-sm">#}
-{#                                    {% for tz in timezones %}#}
-{#                                        <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected {% endif %}>{{ tz }}</option>#}
-{#                                    {% endfor %}#}
-{#                                </select>#}
-{#                            </label>#}
-{#                            <input type="submit" value="{% trans "Set" %}" class="btn btn-outline-light">#}
-{#                        </form>#}
-{#                  </li>#}
                     <li class="nav-item">
                         <form class="form-select-lg" action="{% url 'set_language' %}" method="POST">
                             {% csrf_token %}
@@ -92,9 +78,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                {% block content %}
-                {{ flatpage.content }}
-                {% endblock content %}
+                    {% block content %}
+                    {{ flatpage.content }}
+                    {% endblock content %}
                 </div>
             </div>
 
