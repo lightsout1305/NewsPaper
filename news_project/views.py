@@ -278,5 +278,3 @@ def update_rating_down(request, pk):
     post = Post.objects.get(id=pk)
     post.dislike()
     return redirect(request.META.get('HTTP_REFERER'))
-
-# Create your views here.

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-22 23:45+0300\n"
+"POT-Creation-Date: 2023-11-25 20:21+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,23 +49,35 @@ msgstr "Choisissez des catégories"
 msgid "Image"
 msgstr "Image"
 
-#: .\sign\forms.py:46
+#: .\sign\forms.py:39
 msgid "Username"
 msgstr "Pseudonyme"
 
-#: .\sign\forms.py:47 .\templates\protect\index.html:14
+#: .\sign\forms.py:40 .\templates\protect\index.html:14
 #: .\templates\protect\index.html:16
 msgid "First name"
 msgstr "Prénom"
 
-#: .\sign\forms.py:48 .\templates\protect\index.html:20
+#: .\sign\forms.py:41 .\templates\protect\index.html:20
 #: .\templates\protect\index.html:22
 msgid "Last name"
 msgstr "Nom"
 
-#: .\sign\forms.py:49
+#: .\sign\forms.py:42
 msgid "E-mail"
 msgstr "E-mail"
+
+#: .\templates\account\email\base_message.txt:1
+msgid "Hello from %(site_name)s!"
+msgstr "Bonjour de %(site_name)s!"
+
+#: .\templates\account\email\base_message.txt:5
+msgid ""
+"Thank you for using %(site_name)s!\n"
+"%(site_domain)s"
+msgstr ""
+"Merci de votre utilisation de %(site_name)s!\n"
+"%(site_domain)s"
 
 #: .\templates\account\email\email_confirmation_message.html:7
 msgid "Confirmation"
@@ -89,80 +101,150 @@ msgstr "le lien"
 msgid "Sincerely yours"
 msgstr "Sincèrement vôtre"
 
-#: .\templates\account\login.html:7 .\templates\account\login.html:10
-#: .\templates\account\login.html:13
+#: .\templates\account\email\password_reset_key_message.txt:4
+msgid ""
+"You're receiving this email because you or someone else has requested a "
+"password reset for your user account.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password."
+msgstr ""
+"Vous recevez cet e-mail car vous ou quelqu'un d'autre a demandé le mot de "
+"passe pour votre compte utilisateur. Vous pouvez simplement ignorer ce "
+"message si vous n'êtes pas à l'origine de cette demande. Sinon, cliquez sur "
+"le lien ci-dessous pour réinitialiser votre mot de passe."
+
+#: .\templates\account\email\password_reset_key_message.txt:9
+msgid "In case you forgot, your username is %(username)s."
+msgstr "Si vous avez oublié, votre nom d'utilisateur %(username)s."
+
+#: .\templates\account\email_confirm.html:6
+msgid "Verify e-mail"
+msgstr "Vérifiez e-mail"
+
+#: .\templates\account\email_confirm.html:10
+msgid "Confirm email address"
+msgstr "Confirmez e-mail"
+
+#: .\templates\account\email_confirm.html:11
+msgid "Please confirm your email address."
+msgstr "Veuillez confirmer votre adresse e-mail"
+
+#: .\templates\account\email_confirm.html:14
+#: .\templates\socialaccount\signup.html:15
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: .\templates\account\login.html:8 .\templates\account\login.html:13
+#: .\templates\account\login.html:16
 msgid "Log In"
 msgstr "Connectez-vous"
 
-#: .\templates\account\login.html:15
+#: .\templates\account\login.html:18
 msgid "Forgot password?"
 msgstr "Le mot de passe oublié?"
 
-#: .\templates\account\login.html:16 .\templates\account\signup.html:7
-#: .\templates\account\signup.html:10 .\templates\account\signup.html:13
+#: .\templates\account\login.html:19 .\templates\account\signup.html:7
+#: .\templates\account\signup.html:11 .\templates\account\signup.html:14
 msgid "Sign Up"
 msgstr "Enregistrez-vous"
 
-#: .\templates\account\password_reset.html:5
-#: .\templates\account\password_reset.html:9
+#: .\templates\account\password_reset.html:6
+#: .\templates\account\password_reset.html:10
 #: .\templates\account\password_reset_done.html:6
-#: .\templates\account\password_reset_done.html:9
+#: .\templates\account\password_reset_done.html:10
 msgid "Password Reset"
 msgstr "Réinitialiser du mot de passe"
 
-#: .\templates\account\password_reset.html:20
+#: .\templates\account\password_reset.html:17
 msgid "Reset My Password"
 msgstr "Réinitialiser mon mot de passe"
 
-#: .\templates\account\password_reset.html:26
+#: .\templates\account\password_reset.html:18
+#: .\templates\account\password_reset_done.html:18
+#: .\templates\account\signup.html:17
+#: .\templates\account\verification_sent.html:11
+msgid "Back to login page"
+msgstr "Rentrer à l'autorisation"
+
+#: .\templates\account\password_reset.html:21
 msgid "Please contact us if you have any trouble resetting your password."
 msgstr ""
 "Veuillez nous contacter si vous rencontrez des difficultés pour "
 "réinitialiser votre mot de passe"
 
-#: .\templates\account\password_reset_done.html:15
+#: .\templates\account\password_reset_done.html:16
 msgid ""
 "We have sent you an e-mail. If you have not received it please check your "
 "spam folder. Otherwise\n"
-"    contact us if you do not receive it in a few minutes."
+"        contact us if you do not receive it in a few minutes."
 msgstr ""
 "Nous venons de vous envoyer l'e-mail. Si vous ne l'avez pas pris, veuillez "
 "regarder votre dossier de spam. Faute de quoi, veuillez nous contacter si "
 "vous ne le recevez pas dans quelque minutes."
 
-#: .\templates\account\password_reset_from_key.html:4
-#: .\templates\account\password_reset_from_key.html:7
+#: .\templates\account\password_reset_from_key.html:6
+#: .\templates\account\password_reset_from_key.html:10
 #: .\templates\account\password_reset_from_key_done.html:4
-#: .\templates\account\password_reset_from_key_done.html:7
+#: .\templates\account\password_reset_from_key_done.html:8
 msgid "Change Password"
 msgstr "Changer du mot de passe"
 
-#: .\templates\account\password_reset_from_key.html:7
+#: .\templates\account\password_reset_from_key.html:10
 msgid "Bad Token"
 msgstr "Token mauvais"
 
-#: .\templates\account\password_reset_from_key.html:11
-#, python-format
+#: .\templates\account\password_reset_from_key.html:14
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a <a\n"
-"        href=\"%(passwd_reset_url)s\">new password reset</a>."
+"            href=\"%(passwd_reset_url)s\">new password reset</a>."
 msgstr ""
 "Le lien de réinitialisation de mot de passe était inval, il est probable "
 "qu'il ait déjà été utilisé. Veuillez demander une <a href="
 "\"%(passwd_reset_url)s\"> nouvelle réinitialisation de mot de passe</a>."
 
-#: .\templates\account\password_reset_from_key.html:17
+#: .\templates\account\password_reset_from_key.html:20
 msgid "Change password"
 msgstr "Changer le mot de passe"
 
-#: .\templates\account\password_reset_from_key_done.html:8
+#: .\templates\account\password_reset_from_key_done.html:9
 msgid "Your password is now changed."
 msgstr "Votre mot de passe vient de changer"
 
-#: .\templates\account\signup.html:15
+#: .\templates\account\password_reset_from_key_done.html:10
+msgid "You may now"
+msgstr "Vous pouvez"
+
+#: .\templates\account\password_reset_from_key_done.html:11
+#: .\templates\detail.html:87 .\templates\socialaccount\signup.html:20
+msgid "log in"
+msgstr "vous enregistrer"
+
+#: .\templates\account\password_reset_from_key_done.html:12
+msgid "with your new password"
+msgstr "avec le nouveau mot de passe"
+
+#: .\templates\account\signup.html:16
 msgid "Sign Up via Google"
 msgstr "Enregistrez-vous par Google"
+
+#: .\templates\account\verification_sent.html:5
+#: .\templates\account\verification_sent.html:9
+msgid "Verify Your E-mail Address"
+msgstr "Vérifiez Votre Adresse E-mail"
+
+#: .\templates\account\verification_sent.html:10
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. If you do not see the verification e-mail in "
+"your main inbox, check your spam folder. Please contact us if you do not "
+"receive the verification e-mail within a few minutes."
+msgstr ""
+"Nous vous avons envoyé un e-mail pour vérification. Suivez le lien fourni "
+"pour finaliser le processus d'inscription. Si vous ne voyez pas l'e-mail de "
+"vérification dans votre boîte de réception principale, vérifiez votre "
+"dossier spam. Veuillez nous contacter si vous ne recevez pas l'e-mail de "
+"vérification dans quelques minutes."
 
 #: .\templates\article_create.html:9
 msgid "Create article"
@@ -196,21 +278,13 @@ msgstr "Editer l'article"
 msgid "Category subscribtion"
 msgstr "Abonnement à la catégorie"
 
-#: .\templates\cat_sub.html:11
+#: .\templates\cat_sub.html:12
 msgid "Select the category to subscribe"
 msgstr "Choisissez la catégorie à vous abonner"
 
-#: .\templates\cat_sub.html:17
-msgid "Subscribe to"
-msgstr "Abonnez-vous à"
-
-#: .\templates\cat_sub.html:23
+#: .\templates\cat_sub.html:26
 msgid "Select the category to unsubscribe"
 msgstr "Choisissez la catégorie à vous désabonner"
-
-#: .\templates\cat_sub.html:29
-msgid "Unsubscribe from"
-msgstr "Désabonnez-vous de"
 
 #: .\templates\detail.html:20 .\templates\detail.html:30
 msgid "Change"
@@ -244,10 +318,6 @@ msgstr "Commenter"
 msgid "To leave a comment, please"
 msgstr "Pour commenter, veuillez"
 
-#: .\templates\detail.html:87
-msgid "log in"
-msgstr "vous enregistrer"
-
 #: .\templates\flatpages\default.html:36
 msgid "Search content"
 msgstr "Chercher"
@@ -268,18 +338,17 @@ msgstr "Créez vos actualités"
 msgid "Subcribe to Categories"
 msgstr "Abonnez-vous aux Categories"
 
-#: .\templates\flatpages\default.html:84 .\templates\flatpages\default.html:116
-#: .\templates\flatpages\default.html:118
+#: .\templates\flatpages\default.html:70 .\templates\flatpages\default.html:103
+#: .\templates\flatpages\default.html:105
 msgid "Set"
 msgstr "Choisir"
 
-#: .\templates\flatpages\default.html:104
-#: .\templates\flatpages\default.html:106
+#: .\templates\flatpages\default.html:91 .\templates\flatpages\default.html:93
 msgid "Time zone:"
 msgstr "Fuseau horaire:"
 
 #: .\templates\news.html:10 .\templates\news.html:39
-#: .\templates\news_search.html:61 .\templates\protect\index.html:65
+#: .\templates\news_search.html:61 .\templates\protect\index.html:68
 msgid "News"
 msgstr "Actualités"
 
@@ -289,7 +358,7 @@ msgid "Main news"
 msgstr "Actualités récentes"
 
 #: .\templates\news.html:37 .\templates\news_search.html:59
-#: .\templates\protect\index.html:63
+#: .\templates\protect\index.html:66
 msgid "Article"
 msgstr "Article"
 
@@ -417,9 +486,28 @@ msgstr "Quitter"
 msgid "My content"
 msgstr "Mon contenu"
 
-#: .\templates\protect\index.html:70
+#: .\templates\protect\index.html:73
 msgid "No content yet..."
 msgstr "Pas de contenu..."
+
+#: .\templates\socialaccount\signup.html:6
+#: .\templates\socialaccount\signup.html:10
+msgid "Confirm Google Sign Up"
+msgstr "Confirmez la registration via Google"
+
+#: .\templates\socialaccount\signup.html:11
+msgid "Please confirm your signup via Google."
+msgstr "Veuillez confirmer la registration via Google"
+
+#: .\templates\socialaccount\signup.html:19
+msgid "You already have an account. Please "
+msgstr "Vous avez déjà un compte. Veuillez "
+
+#~ msgid "Subscribe to"
+#~ msgstr "Abonnez-vous à"
+
+#~ msgid "Unsubscribe from"
+#~ msgstr "Désabonnez-vous de"
 
 #~ msgid "The authorized user page of"
 #~ msgstr "La page de l'utilisateur autorisé"

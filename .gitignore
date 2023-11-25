@@ -7,3 +7,4 @@ cache_files/
 db.sqlite3
 mydata.json
 mydata.xml
+logs
